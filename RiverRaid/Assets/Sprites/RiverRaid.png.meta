@@ -1,0 +1,639 @@
+fileFormatVersion: 2
+guid: 4091965929379014ab1ee4082964c2d6
+timeCreated: 1524539188
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Atari - River Raid Atari 2600 - River Raid_0
+    21300002: Atari - River Raid Atari 2600 - River Raid_2
+    21300004: Atari - River Raid Atari 2600 - River Raid_3
+    21300006: Atari - River Raid Atari 2600 - River Raid_4
+    21300008: Atari - River Raid Atari 2600 - River Raid_5
+    21300010: Atari - River Raid Atari 2600 - River Raid_6
+    21300012: Atari - River Raid Atari 2600 - River Raid_8
+    21300014: Atari - River Raid Atari 2600 - River Raid_10
+    21300016: Atari - River Raid Atari 2600 - River Raid_11
+    21300018: Atari - River Raid Atari 2600 - River Raid_12
+    21300020: Atari - River Raid Atari 2600 - River Raid_14
+    21300022: Atari - River Raid Atari 2600 - River Raid_15
+    21300024: Atari - River Raid Atari 2600 - River Raid_16
+    21300026: Atari - River Raid Atari 2600 - River Raid_17
+    21300028: Atari - River Raid Atari 2600 - River Raid_18
+    21300030: Atari - River Raid Atari 2600 - River Raid_21
+    21300032: Atari - River Raid Atari 2600 - River Raid_22
+    21300034: Atari - River Raid Atari 2600 - River Raid_28
+    21300036: Atari - River Raid Atari 2600 - River Raid_29
+    21300038: Atari - River Raid Atari 2600 - River Raid_30
+    21300040: Atari - River Raid Atari 2600 - River Raid_31
+    21300042: Atari - River Raid Atari 2600 - River Raid_32
+    21300044: Atari - River Raid Atari 2600 - River Raid_35
+    21300046: Atari - River Raid Atari 2600 - River Raid_36
+    21300048: Atari - River Raid Atari 2600 - River Raid_37
+    21300050: Atari - River Raid Atari 2600 - River Raid_38
+    21300052: Atari - River Raid Atari 2600 - River Raid_39
+    21300054: Atari - River Raid Atari 2600 - River Raid_40
+    21300056: Atari - River Raid Atari 2600 - River Raid_41
+    21300058: Atari - River Raid Atari 2600 - River Raid_42
+    21300060: Atari - River Raid Atari 2600 - River Raid_43
+    21300062: Atari - River Raid Atari 2600 - River Raid_44
+    21300064: Atari - River Raid Atari 2600 - River Raid_45
+    21300066: Atari - River Raid Atari 2600 - River Raid_46
+    21300068: Atari - River Raid Atari 2600 - River Raid_47
+    21300070: Atari - River Raid Atari 2600 - River Raid_48
+    21300072: RiverRaid_0
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_2
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 114
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_3
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 116
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_4
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 133
+        width: 31
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_5
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 133
+        width: 31
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_6
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 108
+        width: 63
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 117
+        width: 2
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 4, z: 0, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 106
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_11
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 108
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_12
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 107
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_14
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 90
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_15
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 114
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_16
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 108
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_17
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 98
+        width: 31
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_18
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 98
+        width: 31
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_21
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 90
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_22
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 91
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_28
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 80
+        width: 32
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_29
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 57
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_30
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 65
+        width: 78
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_31
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 55
+        width: 64
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_32
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 66
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_35
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 39
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_36
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 39
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_37
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_38
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 42
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_39
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 42
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_40
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 42
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_41
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 42
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_42
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 23
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_43
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 23
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_44
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 42
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_45
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 42
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_46
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 42
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_47
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 42
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atari - River Raid Atari 2600 - River Raid_48
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 42
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RiverRaid_0
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 60
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
