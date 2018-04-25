@@ -231,7 +231,7 @@ TextureImporter:
         serializedVersion: 2
         x: 118
         y: 108
-        width: 31
+        width: 30
         height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -287,7 +287,7 @@ TextureImporter:
         serializedVersion: 2
         x: 85
         y: 108
-        width: 31
+        width: 30
         height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -626,7 +626,7 @@ TextureImporter:
         width: 38
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
