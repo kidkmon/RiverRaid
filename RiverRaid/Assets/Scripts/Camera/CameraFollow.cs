@@ -4,13 +4,27 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+	private Rigidbody2D cameraRb;
+	private float verticalValue;
+
+	void Start() {
+		cameraRb = GetComponent<Rigidbody2D>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+	void Update() {
+
 		
+		if(Input.GetKey(KeyCode.UpArrow)){
+			verticalValue = 0.5f;
+			cameraRb.velocity = new Vector2(0, verticalValue);
+		}
+		else if(Input.GetKey(KeyCode.DownArrow)){
+			verticalValue = 0.125f;
+			cameraRb.velocity = new Vector2(0, verticalValue);
+		}
+		else{
+			verticalValue = 1f;
+			cameraRb.velocity = new Vector2(0, verticalValue);
+		}
 	}
 }
