@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\HUD\BackgroundMovement.cs" />
      <Compile Include="Assets\Scripts\Plane\Bullet\Bullet.cs" />
      <Compile Include="Assets\Scripts\Plane\PlaneMoviments\PlaneAttack.cs" />
