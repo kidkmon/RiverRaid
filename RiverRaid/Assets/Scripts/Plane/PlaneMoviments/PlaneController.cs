@@ -20,31 +20,33 @@ public class PlaneController : MonoBehaviour {
 	}
 	
 	void Update () {
-		
-		float horizontalValue = Input.GetAxis("Horizontal");
 
-		if(Input.GetKey(KeyCode.LeftArrow)){
-			isLeft = true;
-			isRight = false;
-			timeTemp = 0f;
-		}
-		if(Input.GetKey(KeyCode.RightArrow)){
-			isRight = true;
-			isLeft = false;
-			timeTemp = 0f;
-		}
+		if(!PlaneRaycast.isDead){
+			float horizontalValue = Input.GetAxis("Horizontal");
 
-		if(isLeft || isRight){
-			timeTemp += Time.deltaTime;
-			if(timeTemp >= spriteTime){
-				isLeft = false;
+			if(Input.GetKey(KeyCode.LeftArrow)){
+				isLeft = true;
 				isRight = false;
+				timeTemp = 0f;
 			}
+			if(Input.GetKey(KeyCode.RightArrow)){
+				isRight = true;
+				isLeft = false;
+				timeTemp = 0f;
+			}
+
+			if(isLeft || isRight){
+				timeTemp += Time.deltaTime;
+				if(timeTemp >= spriteTime){
+					isLeft = false;
+					isRight = false;
+				}
+			}
+
+			planeRb.velocity = new Vector2(horizontalValue * moveForce, 0f);
+
+			planeAnimator.SetBool("isRight", isRight);
+			planeAnimator.SetBool("isLeft", isLeft);
 		}
-
-		planeRb.velocity = new Vector2(horizontalValue * moveForce, 0f);
-
-		planeAnimator.SetBool("isRight", isRight);
-		planeAnimator.SetBool("isLeft", isLeft);
 	}
 }

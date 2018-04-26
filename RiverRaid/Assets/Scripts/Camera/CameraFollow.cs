@@ -25,7 +25,13 @@ public class CameraFollow : MonoBehaviour {
 			verticalValue = 0.25f;
 		}
 
-		cameraRb.velocity = new Vector2(0, verticalValue);
-		planeRb.velocity = new Vector2(planeRb.velocity.x, verticalValue);
+		if(PlaneRaycast.isDead){
+			cameraRb.velocity = new Vector2(0,0);
+			planeRb.isKinematic = true;
+		}
+		else{
+			cameraRb.velocity = new Vector2(0, verticalValue);
+			planeRb.velocity = new Vector2(planeRb.velocity.x, verticalValue);
+		}
 	}
 }

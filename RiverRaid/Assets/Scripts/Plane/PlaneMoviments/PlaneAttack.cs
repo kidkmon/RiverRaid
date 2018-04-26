@@ -15,20 +15,21 @@ public class PlaneAttack : MonoBehaviour{
 
     void Update(){
         
-        if(Input.GetKeyDown(KeyCode.Space) && !isPressed){
-            isPressed = true;
-            Instantiate(bullet, bulletTransform.position, bulletTransform.rotation);
-            StartCoroutine(BulletCoolDown());
-        }
-
-        if(Input.GetKey(KeyCode.Space) && !isPressed){
-            timeTemp += Time.deltaTime;
-            if(timeTemp >= bulletCoolDownHolding){
+        if(!PlaneRaycast.isDead){
+            if(Input.GetKeyDown(KeyCode.Space) && !isPressed){
+                isPressed = true;
                 Instantiate(bullet, bulletTransform.position, bulletTransform.rotation);
-                timeTemp = 0;
-            }            
-        }
+                StartCoroutine(BulletCoolDown());
+            }
 
+            if(Input.GetKey(KeyCode.Space) && !isPressed){
+                timeTemp += Time.deltaTime;
+                if(timeTemp >= bulletCoolDownHolding){
+                    Instantiate(bullet, bulletTransform.position, bulletTransform.rotation);
+                    timeTemp = 0;
+                }            
+            }
+        }
     }
 
     IEnumerator BulletCoolDown(){

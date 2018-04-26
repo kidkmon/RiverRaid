@@ -5,16 +5,15 @@ using UnityEngine;
 public class PlaneRaycast : MonoBehaviour {
 
 	private Animator planeAnimator;
-	private Rigidbody2D planeRb;
+	public static bool isDead;
 
 	void Start () {
 		planeAnimator = GetComponent<Animator>();
-		planeRb = GetComponent<Rigidbody2D>();
 	}
 	
-	void OnTriggerEnter2D(Collider2D planeCollider){
+	void OnCollisionEnter2D(Collision2D planeCollider){
+		isDead = true;
 		planeAnimator.SetBool("isDead", true);
-		planeRb.isKinematic = true;
 	}
 
 }
