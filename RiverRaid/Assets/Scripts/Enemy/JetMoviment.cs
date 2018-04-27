@@ -8,7 +8,7 @@ public class JetMoviment : MonoBehaviour {
 	[SerializeField] private float tempToDie;
 	[SerializeField] private float rangeLineVertical;
 	
-	private GameObject plane;
+	[SerializeField] private GameObject plane;
 	private Rigidbody2D jetRb;
 	private Animator jetAnimator;
 
@@ -16,27 +16,28 @@ public class JetMoviment : MonoBehaviour {
 	private bool enemyGotHit;
 	
 	void Start () {
-		plane = GameObject.FindGameObjectWithTag("Player");
 		jetRb = GetComponent<Rigidbody2D>();
 		jetAnimator = GetComponent<Animator>();
 	}
 
 	void Update () {
 
-    	if (plane.transform.position.y > transform.position.y - rangeLineVertical && !enemyGotHit){
-			timeTemp += Time.deltaTime;
-			if(timeTemp >= tempToDie){
-				StartCoroutine(DeathAnimation());
+		if(plane.activeSelf){
+			if (plane.transform.position.y > transform.position.y - rangeLineVertical && !enemyGotHit){
+				timeTemp += Time.deltaTime;
+				if(timeTemp >= tempToDie){
+					StartCoroutine(DeathAnimation());
+				}
+				else{
+					jetRb.velocity = new Vector2(moveSpeed, jetRb.velocity.y);
+				}	
 			}
-			else{
-				jetRb.velocity = new Vector2(moveSpeed, jetRb.velocity.y);
-			}	
 		}
 
 	}
 
 	void OnCollisionEnter2D(Collision2D collision){
-		if(collision.gameObject.tag == "Player"){
+		if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Bullet"){
 			enemyGotHit = true;
 			StartCoroutine(DeathAnimation());
 		}

@@ -9,7 +9,7 @@ public class EnemyMovement : MonoBehaviour {
 	[SerializeField] private float tempToDie;
 	[SerializeField] private float rangeLineVertical;
 	
-	private GameObject plane;
+	[SerializeField] private GameObject plane;
 	private Rigidbody2D enemyRb;
 	private Animator enemyAnimator;
 	
@@ -18,27 +18,28 @@ public class EnemyMovement : MonoBehaviour {
 	private int timesCollided = 1;
 
 	void Start () {
-		plane = GameObject.FindGameObjectWithTag("Player");
 		enemyRb = GetComponent<Rigidbody2D>();
 		enemyAnimator = GetComponent<Animator>();
 	}
 	
 	void Update () {
 
-    	if ((plane.transform.position.y > transform.position.y - rangeLineVertical) && !enemyGotHit){
-			timeTemp += Time.deltaTime;
-			if(timeTemp >= tempToDie){
-				StartCoroutine(DeathAnimation());
+		if(plane.activeSelf){
+			if ((plane.transform.position.y > transform.position.y - rangeLineVertical) && !enemyGotHit){
+				timeTemp += Time.deltaTime;
+				if(timeTemp >= tempToDie){
+					StartCoroutine(DeathAnimation());
+				}
+				else{
+					enemyRb.velocity = new Vector2(moveSpeed, enemyRb.velocity.y);
+				}	
 			}
-			else{
-				enemyRb.velocity = new Vector2(moveSpeed, enemyRb.velocity.y);
-			}	
 		}
 
 	}
 	
 	void OnCollisionEnter2D(Collision2D collision){
-		if(collision.gameObject.tag == "Player"){
+		if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Bullet"){
 			enemyGotHit = true;
 			StartCoroutine(DeathAnimation());
 		}

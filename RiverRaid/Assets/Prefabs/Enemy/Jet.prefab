@@ -121,6 +121,7 @@ MonoBehaviour:
   moveSpeed: -0.8
   tempToDie: 10
   rangeLineVertical: 0.9
+  plane: {fileID: 0}
 --- !u!114 &114869177161031212
 MonoBehaviour:
   m_ObjectHideFlags: 1

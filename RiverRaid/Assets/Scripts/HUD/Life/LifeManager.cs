@@ -22,11 +22,13 @@ public class LifeManager : MonoBehaviour {
 			lifeCount.text = (int.Parse(lifeCount.text) + 1).ToString();
 		}
 
-		if(int.Parse(lifeCount.text) == 0){
+		if(lifeCount.text == "" && PlaneRaycast.isDead){
 			if(Input.GetKeyDown(KeyCode.Space)){
 				Time.timeScale = 1f;
 				SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+				PlaneRaycast.isDead = false;
 			}
 		}
 	}
+
 }
