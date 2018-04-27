@@ -6,6 +6,7 @@ public class PlaneAttack : MonoBehaviour{
 
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform bulletTransform;
+    [SerializeField] private AudioSource bulletSong;
 
     private float timeTemp;
     private float bulletCoolDownHolding = 0.5f;
@@ -18,6 +19,7 @@ public class PlaneAttack : MonoBehaviour{
         if(!PlaneRaycast.isDead){
             if(Input.GetKeyDown(KeyCode.Space) && !isPressed){
                 isPressed = true;
+                bulletSong.Play();
                 Instantiate(bullet, bulletTransform.position, bulletTransform.rotation);
                 StartCoroutine(BulletCoolDown());
             }
@@ -25,6 +27,7 @@ public class PlaneAttack : MonoBehaviour{
             if(Input.GetKey(KeyCode.Space) && !isPressed){
                 timeTemp += Time.deltaTime;
                 if(timeTemp >= bulletCoolDownHolding){
+                    bulletSong.Play();
                     Instantiate(bullet, bulletTransform.position, bulletTransform.rotation);
                     timeTemp = 0;
                 }            

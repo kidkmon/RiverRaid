@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61826425975067498}
   - component: {fileID: 50016997635592552}
   - component: {fileID: 114370777890147270}
+  - component: {fileID: 114320026187721820}
   m_Layer: 0
   m_Name: Helicopter
   m_TagString: Untagged
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1633280478579050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.091445744, y: 2.0843873, z: 0}
+  m_LocalPosition: {x: -0.156, y: 2.0843873, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -106,6 +107,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114320026187721820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1633280478579050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31655c150878fdc429b8ccd377d22357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyValue: 60
+  scoreText: {fileID: 0}
 --- !u!114 &114370777890147270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,8 +131,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092fa8a082be4b249837f84dc490e94c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyType: isDead
   moveSpeed: 0.5
-  tempToDie: 6
+  tempToDie: 20
+  rangeLineVertical: 0.7
 --- !u!212 &212839435354370504
 SpriteRenderer:
   m_ObjectHideFlags: 1

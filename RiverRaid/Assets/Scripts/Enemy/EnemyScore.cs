@@ -1,0 +1,17 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class EnemyScore : MonoBehaviour {
+
+	[SerializeField] private int enemyValue;
+	[SerializeField] private Text scoreText;
+
+	void OnCollisionEnter2D(Collision2D collision){
+		if(collision.gameObject.tag == "Player"){
+			scoreText.text = (enemyValue + int.Parse(scoreText.text)).ToString();
+		}
+	}
+	
+}

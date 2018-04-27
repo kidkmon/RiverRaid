@@ -4,31 +4,31 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour {
 
-	private GameObject plane;
-	private Rigidbody2D enemyRb;
-
+	[SerializeField] private string enemyType;
 	[SerializeField] private float moveSpeed;
 	[SerializeField] private float tempToDie;
+	[SerializeField] private float rangeLineVertical;
 	
-	private float rangeLineHorizontal = 1f;
-	private float rangeLineVertical = 0.7f;
+	private GameObject plane;
+	private Rigidbody2D enemyRb;
+	private Animator enemyAnimator;
+	
 	private float timeTemp;
-
-	private bool planePassed;
-	
+	private bool enemyGotHit;
 	private int timesCollided = 1;
 
 	void Start () {
 		plane = GameObject.FindGameObjectWithTag("Player");
 		enemyRb = GetComponent<Rigidbody2D>();
+		enemyAnimator = GetComponent<Animator>();
 	}
 	
 	void Update () {
 
-    	if (plane.transform.position.y > transform.position.y - rangeLineVertical){
+    	if ((plane.transform.position.y > transform.position.y - rangeLineVertical) && !enemyGotHit){
 			timeTemp += Time.deltaTime;
 			if(timeTemp >= tempToDie){
-				Destroy(gameObject);
+				StartCoroutine(DeathAnimation());
 			}
 			else{
 				enemyRb.velocity = new Vector2(moveSpeed, enemyRb.velocity.y);
@@ -39,7 +39,8 @@ public class EnemyMovement : MonoBehaviour {
 	
 	void OnCollisionEnter2D(Collision2D collision){
 		if(collision.gameObject.tag == "Player"){
-			Destroy(gameObject);
+			enemyGotHit = true;
+			StartCoroutine(DeathAnimation());
 		}
 		else{
 			transform.rotation = new Quaternion(transform.rotation.x, 180, transform.rotation.z, 1);
@@ -49,5 +50,13 @@ public class EnemyMovement : MonoBehaviour {
 			moveSpeed = -moveSpeed;
 			timesCollided++;
 		}
+	}
+
+	IEnumerator DeathAnimation(){
+		enemyRb.velocity = new Vector2(0, 0);
+		GetComponent<BoxCollider2D>().enabled = false;
+		enemyAnimator.SetBool(enemyType, true);
+		yield return new WaitForSeconds(1f);
+		Destroy(gameObject);
 	}
 }

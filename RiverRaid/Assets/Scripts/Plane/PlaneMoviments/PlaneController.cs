@@ -7,7 +7,7 @@ public class PlaneController : MonoBehaviour {
 	private Animator planeAnimator;
 	private Rigidbody2D planeRb;
 
-	private float moveForce = 1.5f;
+	private float moveForce = 1.1f;
 	private float timeTemp;
 	private float spriteTime = 0.1f;
 

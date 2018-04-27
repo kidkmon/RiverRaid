@@ -27,7 +27,7 @@ public class CameraFollow : MonoBehaviour {
 
 		if(PlaneRaycast.isDead){
 			cameraRb.velocity = new Vector2(0,0);
-			planeRb.isKinematic = true;
+			planeRb.velocity = new Vector2(0,0);
 		}
 		else{
 			cameraRb.velocity = new Vector2(0, verticalValue);
