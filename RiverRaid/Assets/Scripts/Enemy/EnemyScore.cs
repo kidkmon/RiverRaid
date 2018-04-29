@@ -15,7 +15,7 @@ public class EnemyScore : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D collider){
-		if(collider.gameObject.tag == "Player" || collider.gameObject.tag == "Bullet"){
+		if(collider.gameObject.tag == "Bullet"){
 			scoreText.text = (enemyValue + int.Parse(scoreText.text)).ToString();
 		}
 	}

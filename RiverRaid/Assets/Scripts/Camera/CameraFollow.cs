@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
 
+	[SerializeField] private AudioSource[] planeSounds;
 	[SerializeField] private Rigidbody2D planeRb;
 	private Rigidbody2D cameraRb;
 	private float verticalValue;
@@ -14,20 +15,37 @@ public class CameraFollow : MonoBehaviour {
 
 	void Update() {
 
-		
 		if(Input.GetKey(KeyCode.UpArrow)){
-			verticalValue = 0.5f;
+			if(!planeSounds[0].isPlaying){
+				planeSounds[0].Play();
+			}
+			planeSounds[1].Stop();
+			planeSounds[2].Stop();
+			verticalValue = 0.75f;
 		}
 		else if(Input.GetKey(KeyCode.DownArrow)){
-			verticalValue = 0.125f;
+			if(!planeSounds[1].isPlaying){
+				planeSounds[1].Play();
+			}
+			planeSounds[0].Stop();
+			planeSounds[2].Stop();
+			 verticalValue = 0.25f;
 		}
 		else{
-			verticalValue = 0.25f;
+			if(!planeSounds[2].isPlaying){
+				planeSounds[2].Play();
+			}
+			planeSounds[0].Stop();
+			planeSounds[1].Stop();
+			verticalValue = 0.5f;
 		}
 
 		if(PlaneRaycast.isDead){
 			cameraRb.velocity = new Vector2(0,0);
 			planeRb.velocity = new Vector2(0,0);
+			foreach(AudioSource planeSound in planeSounds){
+				planeSound.Stop();
+			}
 		}
 		else{
 			cameraRb.velocity = new Vector2(0, verticalValue);

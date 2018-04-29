@@ -11,10 +11,10 @@ public class FuelController : MonoBehaviour {
 	void FixedUpdate() {
 
 		if(CameraStart.gameStarted && !PlaneRaycast.isDead){
-			if(transform.position.x > -0.25f){
+			if(transform.position.x > -0.27f){
 				timeTemp += Time.deltaTime;
 				if(timeTemp > 1.5f){
-					transform.position = new Vector3(transform.position.x - 0.025f, transform.position.y, transform.position.z);
+					transform.position = new Vector3(transform.position.x - 0.030f, transform.position.y, transform.position.z);
 					timeTemp = 0;
 				}
 			}
@@ -23,7 +23,7 @@ public class FuelController : MonoBehaviour {
 			}
 		}
 		if(!CameraStart.gameStarted){
-			transform.position = new Vector3(0.25f, transform.position.y, transform.position.z);
+			transform.position = new Vector3(0.30f, transform.position.y, transform.position.z);
 		}
 		
 	}

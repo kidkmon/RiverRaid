@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour {
 
-	[SerializeField] private string enemyType;
+	[SerializeField] private string enemyDeathType;
 	[SerializeField] private float moveSpeed;
 	[SerializeField] private float tempToDie;
 	[SerializeField] private float rangeLineVertical;
@@ -56,8 +56,8 @@ public class EnemyMovement : MonoBehaviour {
 	IEnumerator DeathAnimation(){
 		enemyRb.velocity = new Vector2(0, 0);
 		GetComponent<BoxCollider2D>().enabled = false;
-		enemyAnimator.SetBool(enemyType, true);
-		yield return new WaitForSeconds(1f);
+		enemyAnimator.SetBool(enemyDeathType, true);
+		yield return new WaitForSeconds(0.8f);
 		Destroy(gameObject);
 	}
 }

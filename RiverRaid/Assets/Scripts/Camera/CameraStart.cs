@@ -17,7 +17,7 @@ public class CameraStart : MonoBehaviour {
 		desiredPosition = new Vector3(transform.position.x, SpawnPosition.position.y, transform.position.z);
 		transform.position = Vector3.Lerp(transform.position, desiredPosition, cameraSpeed);
 
-		if(transform.position == desiredPosition){
+		if(transform.position.y >= SpawnPosition.position.y - 0.025f){
 			plane.SetActive(true);
 			lifeCount.SetActive(true);
 			if(Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical")){

@@ -50,7 +50,7 @@ public class JetMoviment : MonoBehaviour {
 		jetRb.velocity = new Vector2(0, 0);
 		GetComponent<BoxCollider2D>().enabled = false;
 		jetAnimator.SetBool("isShortDead", true);
-		yield return new WaitForSeconds(1f);
+		yield return new WaitForSeconds(0.8f);
 		Destroy(gameObject);
 	}
 }

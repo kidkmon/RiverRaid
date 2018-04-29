@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1031699448691688}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.017, y: 1.674, z: 0}
+  m_LocalPosition: {x: -0.01, y: 22.071, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092fa8a082be4b249837f84dc490e94c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: isLargeDead
+  enemyDeathType: isLargeDead
   moveSpeed: 0.3
   tempToDie: 20
   rangeLineVertical: 0.5
@@ -170,7 +170,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300034, guid: 4091965929379014ab1ee4082964c2d6, type: 3}
+  m_Sprite: {fileID: 21300060, guid: af8a9d760425425468c3f26c7ee62909, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
