@@ -7,7 +7,8 @@ public class CameraStart : MonoBehaviour {
 	[SerializeField] private Transform SpawnPosition;
 	[SerializeField] private GameObject plane;
 	[SerializeField] private GameObject lifeCount; 
-	
+	[SerializeField] private List<GameObject> resetEnemys;	
+
 	private float cameraSpeed = 0.025f;
 	private Vector3 desiredPosition;
 
@@ -18,6 +19,7 @@ public class CameraStart : MonoBehaviour {
 		transform.position = Vector3.Lerp(transform.position, desiredPosition, cameraSpeed);
 
 		if(transform.position.y >= SpawnPosition.position.y - 0.025f){
+			ActivateAllTheObjects();
 			plane.SetActive(true);
 			lifeCount.SetActive(true);
 			if(Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical")){
@@ -25,6 +27,12 @@ public class CameraStart : MonoBehaviour {
 				gameStarted = true;
 				GetComponent<CameraStart>().enabled = false;	
 			}
+		}
+	}
+
+	void ActivateAllTheObjects(){
+		foreach(GameObject enemy in resetEnemys){
+			enemy.SetActive(true);
 		}
 	}
 }

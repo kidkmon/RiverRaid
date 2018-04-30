@@ -18,6 +18,7 @@ public class RespawnController : MonoBehaviour {
 	}
 
 	IEnumerator BridgeDestroyed(){
+		GetComponent<AudioSource>().Play();
 		mainCamera.backgroundColor = new Color32(153,51,153,255);
 		GetComponent<BoxCollider2D>().enabled = false;
 		GetComponent<Animator>().SetBool("isDead", true);

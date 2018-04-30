@@ -8,6 +8,7 @@ public class FuelObject : MonoBehaviour {
 	[SerializeField] private AudioSource[] fuelSong;
 	private float timeTemp;
 
+
 	void OnTriggerEnter2D(Collider2D collider) {
 		if(collider.gameObject.tag == "Bullet"){
 			StartCoroutine(DeathAnimation());
@@ -36,9 +37,12 @@ public class FuelObject : MonoBehaviour {
 	}
 
 	IEnumerator DeathAnimation(){
+		fuelSong[2].Play();
 		GetComponent<BoxCollider2D>().enabled = false;
-		GetComponent<Animator>().SetBool("isShortDead", true);
+		GetComponent<Animator>().SetBool("isDead", true);
 		yield return new WaitForSeconds(0.6f);
-		Destroy(gameObject);
+		GetComponent<Animator>().SetBool("isDead", false);
+		GetComponent<BoxCollider2D>().enabled = true;
+		gameObject.SetActive(false);
 	}
 }

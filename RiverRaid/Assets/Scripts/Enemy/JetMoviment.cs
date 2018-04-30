@@ -47,10 +47,14 @@ public class JetMoviment : MonoBehaviour {
 	}
 
 	IEnumerator DeathAnimation(){
+		GetComponent<AudioSource>().Play();
 		jetRb.velocity = new Vector2(0, 0);
 		GetComponent<BoxCollider2D>().enabled = false;
-		jetAnimator.SetBool("isShortDead", true);
+		jetAnimator.SetBool("isDead", true);
 		yield return new WaitForSeconds(0.8f);
-		Destroy(gameObject);
+		jetAnimator.SetBool("isDead", false);
+		GetComponent<BoxCollider2D>().enabled = true;
+		enemyGotHit = false;
+		gameObject.SetActive(false);
 	}
 }

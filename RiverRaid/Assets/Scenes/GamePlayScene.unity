@@ -373,7 +373,23 @@ Prefab:
       propertyPath: plane
       value: 
       objectReference: {fileID: 828734233}
-    m_RemovedComponents: []
+    - target: {fileID: 82873635584664528, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114858702314310158, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95201738899960594, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 819de2a944fbf504d906a326266791f3, type: 2}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 70b4d11bbf99516478dcd27cea1029db, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &24311336 stripped
@@ -699,7 +715,23 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
-    m_RemovedComponents: []
+    - target: {fileID: 82164996473949366, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: enemyType
+      value: isHelicopter
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &34625435
@@ -950,6 +982,11 @@ Transform:
   m_Father: {fileID: 1776620990}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &65217174 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1031699448691688, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+    type: 2}
+  m_PrefabInternal: {fileID: 794329699}
 --- !u!1 &69487215
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,6 +1023,11 @@ Transform:
   m_Father: {fileID: 1211563986}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &72725929 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633280478579050, guid: 1506becc7fa15b64d86cbfe039d31e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 768386022}
 --- !u!1001 &75443263
 Prefab:
   m_ObjectHideFlags: 0
@@ -993,6 +1035,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.03627196
@@ -1039,9 +1086,34 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
+    - target: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 75443265}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
+--- !u!82 &75443265 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 75443263}
 --- !u!1 &78034697
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,6 +1323,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &101608512 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1031699448691688, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+    type: 2}
+  m_PrefabInternal: {fileID: 1295120259}
 --- !u!1 &101827779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1715,6 +1792,16 @@ Prefab:
       propertyPath: m_Name
       value: Jet (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 114858702314310158, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95201738899960594, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 819de2a944fbf504d906a326266791f3, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 70b4d11bbf99516478dcd27cea1029db, type: 2}
   m_IsPrefabParent: 0
@@ -1875,6 +1962,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &137733985 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1206799169878718, guid: 70b4d11bbf99516478dcd27cea1029db,
+    type: 2}
+  m_PrefabInternal: {fileID: 1789496437}
 --- !u!1 &138555794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,6 +2101,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.152
@@ -2055,12 +2152,37 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
+    - target: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 142756034}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &142756032 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 142756031}
+--- !u!82 &142756034 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
     type: 2}
   m_PrefabInternal: {fileID: 142756031}
 --- !u!4 &145401561 stripped
@@ -3042,6 +3164,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &236268703 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 685508669}
 --- !u!1 &238210967
 GameObject:
   m_ObjectHideFlags: 0
@@ -3118,6 +3245,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &247278059 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633280478579050, guid: 1506becc7fa15b64d86cbfe039d31e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 592791053}
 --- !u!1001 &253280628
 Prefab:
   m_ObjectHideFlags: 0
@@ -3125,6 +3257,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.528
@@ -3171,12 +3308,37 @@ Prefab:
       propertyPath: measureFuelPosition
       value: 
       objectReference: {fileID: 2072875796}
+    - target: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 253280631}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &253280629 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 253280628}
+--- !u!82 &253280631 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
     type: 2}
   m_PrefabInternal: {fileID: 253280628}
 --- !u!1 &256329135
@@ -3400,6 +3562,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.748
@@ -3446,12 +3613,37 @@ Prefab:
       propertyPath: m_Name
       value: Fuel (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 264793177}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &264793175 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 264793174}
+--- !u!82 &264793177 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
     type: 2}
   m_PrefabInternal: {fileID: 264793174}
 --- !u!4 &275386901 stripped
@@ -3692,6 +3884,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &305854693 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633280478579050, guid: 1506becc7fa15b64d86cbfe039d31e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 936493996}
 --- !u!1 &308602408
 GameObject:
   m_ObjectHideFlags: 0
@@ -3810,6 +4007,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.648
@@ -3856,12 +4058,37 @@ Prefab:
       propertyPath: m_Name
       value: Fuel (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 318540171}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &318540169 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 318540168}
+--- !u!82 &318540171 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
     type: 2}
   m_PrefabInternal: {fileID: 318540168}
 --- !u!1 &323576826
@@ -4002,6 +4229,11 @@ Transform:
   m_Father: {fileID: 223204392}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &329863586 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1031699448691688, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+    type: 2}
+  m_PrefabInternal: {fileID: 1589261601}
 --- !u!1 &334037338
 GameObject:
   m_ObjectHideFlags: 0
@@ -4099,6 +4331,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.057
@@ -4145,12 +4382,37 @@ Prefab:
       propertyPath: m_Name
       value: Fuel (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 343487093}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &343487091 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 343487090}
+--- !u!82 &343487093 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
     type: 2}
   m_PrefabInternal: {fileID: 343487090}
 --- !u!1001 &345676095
@@ -4351,6 +4613,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.18527196
@@ -4397,9 +4664,34 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
+    - target: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 370299862}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
+--- !u!82 &370299862 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 370299860}
 --- !u!1 &374092650
 GameObject:
   m_ObjectHideFlags: 0
@@ -4430,6 +4722,11 @@ Transform:
   m_Father: {fileID: 113898568}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &378808059 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 318540168}
 --- !u!1001 &388831100
 Prefab:
   m_ObjectHideFlags: 0
@@ -5287,6 +5584,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.004728049
@@ -5333,9 +5635,34 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
+    - target: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 438232703}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
+--- !u!82 &438232703 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 438232701}
 --- !u!1 &439094484
 GameObject:
   m_ObjectHideFlags: 0
@@ -6241,7 +6568,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b43862b0ef33a124b93bb69f6148d81a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6352,6 +6679,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.041271955
@@ -6398,9 +6730,34 @@ Prefab:
       propertyPath: measureFuelPosition
       value: 
       objectReference: {fileID: 2072875796}
+    - target: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 492365445}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
+--- !u!82 &492365445 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 492365443}
 --- !u!1 &501271147
 GameObject:
   m_ObjectHideFlags: 0
@@ -7111,6 +7468,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4832397413379966, guid: 8ae01f4f9402364489ff8337f4578f30,
     type: 2}
   m_PrefabInternal: {fileID: 1756748798}
+--- !u!1 &553504675 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633280478579050, guid: 1506becc7fa15b64d86cbfe039d31e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 1124641431}
 --- !u!1 &560611837
 GameObject:
   m_ObjectHideFlags: 0
@@ -7598,7 +7960,23 @@ Prefab:
       propertyPath: m_Name
       value: Helicopter (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82164996473949366, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: enemyType
+      value: isHelicopter
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &592791054 stripped
@@ -7791,7 +8169,23 @@ Prefab:
       propertyPath: plane
       value: 
       objectReference: {fileID: 828734233}
-    m_RemovedComponents: []
+    - target: {fileID: 82873635584664528, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114858702314310158, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95201738899960594, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 819de2a944fbf504d906a326266791f3, type: 2}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 70b4d11bbf99516478dcd27cea1029db, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &609125045 stripped
@@ -8446,6 +8840,11 @@ Prefab:
       propertyPath: m_Name
       value: Ship (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 95159985380256456, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 977fa53d682154a4dbc488bd7a8faf32, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b163bfb99a837e4b85a6f29d5c58a27, type: 2}
   m_IsPrefabParent: 0
@@ -8641,6 +9040,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4759891662674392, guid: 1506becc7fa15b64d86cbfe039d31e53,
     type: 2}
   m_PrefabInternal: {fileID: 1802503798}
+--- !u!1 &678186566 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1031699448691688, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+    type: 2}
+  m_PrefabInternal: {fileID: 835546358}
 --- !u!1 &680432412
 GameObject:
   m_ObjectHideFlags: 0
@@ -8685,6 +9089,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.16427197
@@ -8731,9 +9140,34 @@ Prefab:
       propertyPath: measureFuelPosition
       value: 
       objectReference: {fileID: 2072875796}
+    - target: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 685508671}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
+--- !u!82 &685508671 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 685508669}
 --- !u!1001 &688227225
 Prefab:
   m_ObjectHideFlags: 0
@@ -9022,6 +9456,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &722276523 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 142756031}
 --- !u!1 &732539062
 GameObject:
   m_ObjectHideFlags: 0
@@ -9112,6 +9551,26 @@ Prefab:
       propertyPath: rangeLineVertical
       value: 1.15
       objectReference: {fileID: 0}
+    - target: {fileID: 82578225727601764, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: enemyType
+      value: isShip
+      objectReference: {fileID: 0}
+    - target: {fileID: 95159985380256456, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 977fa53d682154a4dbc488bd7a8faf32, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b163bfb99a837e4b85a6f29d5c58a27, type: 2}
   m_IsPrefabParent: 0
@@ -9320,7 +9779,23 @@ Prefab:
       propertyPath: m_Name
       value: Helicopter (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82164996473949366, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: enemyType
+      value: isHelicopter
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &768386023 stripped
@@ -9513,6 +9988,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &779795744 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633280478579050, guid: 1506becc7fa15b64d86cbfe039d31e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 1466435154}
 --- !u!1001 &780078104
 Prefab:
   m_ObjectHideFlags: 0
@@ -9552,17 +10032,33 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114869177161031212, guid: 70b4d11bbf99516478dcd27cea1029db,
-        type: 2}
-      propertyPath: scoreText
-      value: 
-      objectReference: {fileID: 188052230}
     - target: {fileID: 114858702314310158, guid: 70b4d11bbf99516478dcd27cea1029db,
         type: 2}
       propertyPath: plane
       value: 
       objectReference: {fileID: 828734233}
-    m_RemovedComponents: []
+    - target: {fileID: 114869177161031212, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 82873635584664528, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114858702314310158, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95201738899960594, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 819de2a944fbf504d906a326266791f3, type: 2}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 70b4d11bbf99516478dcd27cea1029db, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &780078105 stripped
@@ -9780,9 +10276,34 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
+    - target: {fileID: 82578225727601764, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: enemyType
+      value: isShip
+      objectReference: {fileID: 0}
+    - target: {fileID: 95159985380256456, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 977fa53d682154a4dbc488bd7a8faf32, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b163bfb99a837e4b85a6f29d5c58a27, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &794749101 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 253280628}
 --- !u!4 &796728688 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4664001089110724, guid: bec2e8ee58572904f9f4b3ea9e497080,
@@ -10160,6 +10681,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &826452309 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1206799169878718, guid: 70b4d11bbf99516478dcd27cea1029db,
+    type: 2}
+  m_PrefabInternal: {fileID: 1375311246}
 --- !u!1 &828734233
 GameObject:
   m_ObjectHideFlags: 0
@@ -10444,6 +10970,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!1 &831797418 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1206799169878718, guid: 70b4d11bbf99516478dcd27cea1029db,
+    type: 2}
+  m_PrefabInternal: {fileID: 609125044}
 --- !u!1001 &835546358
 Prefab:
   m_ObjectHideFlags: 0
@@ -10497,6 +11028,26 @@ Prefab:
       propertyPath: m_Name
       value: Ship (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 82578225727601764, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: enemyType
+      value: isShip
+      objectReference: {fileID: 0}
+    - target: {fileID: 95159985380256456, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 977fa53d682154a4dbc488bd7a8faf32, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b163bfb99a837e4b85a6f29d5c58a27, type: 2}
   m_IsPrefabParent: 0
@@ -11342,6 +11893,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4560954995338872, guid: fb69e5df56b83034ebaf5fe7c50fb4a4,
     type: 2}
   m_PrefabInternal: {fileID: 157395056}
+--- !u!1 &882364086 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633280478579050, guid: 1506becc7fa15b64d86cbfe039d31e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 1328167048}
 --- !u!1 &883122663
 GameObject:
   m_ObjectHideFlags: 0
@@ -12091,7 +12647,23 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
-    m_RemovedComponents: []
+    - target: {fileID: 82164996473949366, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: enemyType
+      value: isHelicopter
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &937232066 stripped
@@ -12206,6 +12778,11 @@ Transform:
   m_Father: {fileID: 1823593208}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &940482865 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 1240826584}
 --- !u!1 &949069238
 GameObject:
   m_ObjectHideFlags: 0
@@ -12967,7 +13544,23 @@ Prefab:
       propertyPath: plane
       value: 
       objectReference: {fileID: 828734233}
-    m_RemovedComponents: []
+    - target: {fileID: 82164996473949366, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: enemyType
+      value: isHelicopter
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1018596554 stripped
@@ -13022,6 +13615,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4923131634085672, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
     type: 2}
   m_PrefabInternal: {fileID: 794329699}
+--- !u!1 &1031679257 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 2037886057}
 --- !u!1 &1031776740
 GameObject:
   m_ObjectHideFlags: 0
@@ -13105,6 +13703,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.31627196
@@ -13151,14 +13754,44 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
+    - target: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 1032002671}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
+--- !u!82 &1032002671 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 1032002669}
 --- !u!4 &1036777107 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4810952935636030, guid: 514db8fc81a19f848a3e61d8e9df3be5,
     type: 2}
   m_PrefabInternal: {fileID: 800856968}
+--- !u!1 &1037662342 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1206799169878718, guid: 70b4d11bbf99516478dcd27cea1029db,
+    type: 2}
+  m_PrefabInternal: {fileID: 1195779970}
 --- !u!4 &1042384963 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4759891662674392, guid: 1506becc7fa15b64d86cbfe039d31e53,
@@ -13853,6 +14486,26 @@ Prefab:
       propertyPath: moveSpeed
       value: -0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 82578225727601764, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: enemyType
+      value: isShip
+      objectReference: {fileID: 0}
+    - target: {fileID: 95159985380256456, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 977fa53d682154a4dbc488bd7a8faf32, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b163bfb99a837e4b85a6f29d5c58a27, type: 2}
   m_IsPrefabParent: 0
@@ -14016,7 +14669,23 @@ Prefab:
       propertyPath: plane
       value: 
       objectReference: {fileID: 828734233}
-    m_RemovedComponents: []
+    - target: {fileID: 82873635584664528, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114858702314310158, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95201738899960594, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 819de2a944fbf504d906a326266791f3, type: 2}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 70b4d11bbf99516478dcd27cea1029db, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1080392375 stripped
@@ -14146,6 +14815,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1121098632 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1031699448691688, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+    type: 2}
+  m_PrefabInternal: {fileID: 1354727890}
 --- !u!1 &1122368402
 GameObject:
   m_ObjectHideFlags: 0
@@ -14307,7 +14981,23 @@ Prefab:
       propertyPath: plane
       value: 
       objectReference: {fileID: 828734233}
-    m_RemovedComponents: []
+    - target: {fileID: 82164996473949366, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: enemyType
+      value: isHelicopter
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1125146699
@@ -14842,6 +15532,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.588
@@ -14888,12 +15583,37 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
+    - target: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 1132982764}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1132982762 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 1132982761}
+--- !u!82 &1132982764 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
     type: 2}
   m_PrefabInternal: {fileID: 1132982761}
 --- !u!1001 &1144916154
@@ -15099,6 +15819,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1147745892 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 1132982761}
 --- !u!1 &1153867665
 GameObject:
   m_ObjectHideFlags: 0
@@ -15778,7 +16503,23 @@ Prefab:
       propertyPath: plane
       value: 
       objectReference: {fileID: 828734233}
-    m_RemovedComponents: []
+    - target: {fileID: 82873635584664528, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114858702314310158, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95201738899960594, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 819de2a944fbf504d906a326266791f3, type: 2}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 70b4d11bbf99516478dcd27cea1029db, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1195779971 stripped
@@ -15888,6 +16629,26 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
+    - target: {fileID: 82578225727601764, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: enemyType
+      value: isShip
+      objectReference: {fileID: 0}
+    - target: {fileID: 95159985380256456, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 977fa53d682154a4dbc488bd7a8faf32, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b163bfb99a837e4b85a6f29d5c58a27, type: 2}
   m_IsPrefabParent: 0
@@ -15935,15 +16696,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1955066618476014, guid: c6f2c45570be1984e9d6bf76e49feea9, type: 2}
-      propertyPath: m_Name
-      value: Bridge (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114256543902272788, guid: c6f2c45570be1984e9d6bf76e49feea9,
-        type: 2}
-      propertyPath: cameraStartPosition
-      value: 
-      objectReference: {fileID: 1631281223}
     - target: {fileID: 114256543902272788, guid: c6f2c45570be1984e9d6bf76e49feea9,
         type: 2}
       propertyPath: respawnPosition
@@ -15951,9 +16703,18 @@ Prefab:
       objectReference: {fileID: 632355414}
     - target: {fileID: 114256543902272788, guid: c6f2c45570be1984e9d6bf76e49feea9,
         type: 2}
+      propertyPath: cameraStartPosition
+      value: 
+      objectReference: {fileID: 1631281223}
+    - target: {fileID: 114256543902272788, guid: c6f2c45570be1984e9d6bf76e49feea9,
+        type: 2}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 1255595054}
+    - target: {fileID: 1955066618476014, guid: c6f2c45570be1984e9d6bf76e49feea9, type: 2}
+      propertyPath: m_Name
+      value: Bridge (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6f2c45570be1984e9d6bf76e49feea9, type: 2}
   m_IsPrefabParent: 0
@@ -16038,6 +16799,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1206408388 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633280478579050, guid: 1506becc7fa15b64d86cbfe039d31e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 1346866924}
 --- !u!1 &1208798567
 GameObject:
   m_ObjectHideFlags: 0
@@ -16470,6 +17236,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4373786007964946, guid: 5101d96fa52e1494b9c4ff6422e726b3,
     type: 2}
   m_PrefabInternal: {fileID: 1089232489}
+--- !u!1 &1236746962 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1031699448691688, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+    type: 2}
+  m_PrefabInternal: {fileID: 1070792059}
 --- !u!1 &1240593690
 GameObject:
   m_ObjectHideFlags: 0
@@ -16553,6 +17324,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.044271946
@@ -16595,9 +17371,54 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
+    - target: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 1240826588}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[1]
+      value: 
+      objectReference: {fileID: 1240826586}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[0]
+      value: 
+      objectReference: {fileID: 1240826587}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
+--- !u!82 &1240826586 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82907677078681250, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 1240826584}
+--- !u!82 &1240826587 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82641244012267456, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 1240826584}
+--- !u!82 &1240826588 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 1240826584}
 --- !u!1 &1254899661
 GameObject:
   m_ObjectHideFlags: 0
@@ -16812,6 +17633,57 @@ MonoBehaviour:
   SpawnPosition: {fileID: 1631281223}
   plane: {fileID: 828734233}
   lifeCount: {fileID: 1691893059}
+  resetEnemys:
+  - {fileID: 1665507306}
+  - {fileID: 1789570956}
+  - {fileID: 305854693}
+  - {fileID: 1551152159}
+  - {fileID: 1505723800}
+  - {fileID: 2101388563}
+  - {fileID: 553504675}
+  - {fileID: 1206408388}
+  - {fileID: 1857641543}
+  - {fileID: 1968506529}
+  - {fileID: 247278059}
+  - {fileID: 72725929}
+  - {fileID: 1562958831}
+  - {fileID: 779795744}
+  - {fileID: 882364086}
+  - {fileID: 2007324589}
+  - {fileID: 329863586}
+  - {fileID: 1236746962}
+  - {fileID: 65217174}
+  - {fileID: 1996106853}
+  - {fileID: 2125766168}
+  - {fileID: 678186566}
+  - {fileID: 101608512}
+  - {fileID: 1268280256}
+  - {fileID: 1121098632}
+  - {fileID: 1735993001}
+  - {fileID: 1525867814}
+  - {fileID: 2128540585}
+  - {fileID: 137733985}
+  - {fileID: 826452309}
+  - {fileID: 1037662342}
+  - {fileID: 1699318484}
+  - {fileID: 831797418}
+  - {fileID: 2094926121}
+  - {fileID: 940482865}
+  - {fileID: 1960070231}
+  - {fileID: 2046186684}
+  - {fileID: 1587604003}
+  - {fileID: 1031679257}
+  - {fileID: 1260962045}
+  - {fileID: 236268703}
+  - {fileID: 1456913768}
+  - {fileID: 1631775813}
+  - {fileID: 1821715877}
+  - {fileID: 794749101}
+  - {fileID: 378808059}
+  - {fileID: 1147745892}
+  - {fileID: 722276523}
+  - {fileID: 1858795307}
+  - {fileID: 1658199845}
 --- !u!82 &1255595059
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17204,6 +18076,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1260962045 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 492365443}
 --- !u!1 &1261006837
 GameObject:
   m_ObjectHideFlags: 0
@@ -17334,6 +18211,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1268280256 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1031699448691688, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+    type: 2}
+  m_PrefabInternal: {fileID: 1994602355}
 --- !u!1 &1278708381
 GameObject:
   m_ObjectHideFlags: 0
@@ -17484,7 +18366,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300084, guid: af8a9d760425425468c3f26c7ee62909, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17561,6 +18443,26 @@ Prefab:
       propertyPath: m_Name
       value: Ship (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 82578225727601764, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: enemyType
+      value: isShip
+      objectReference: {fileID: 0}
+    - target: {fileID: 95159985380256456, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 977fa53d682154a4dbc488bd7a8faf32, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b163bfb99a837e4b85a6f29d5c58a27, type: 2}
   m_IsPrefabParent: 0
@@ -18456,7 +19358,23 @@ Prefab:
       propertyPath: plane
       value: 
       objectReference: {fileID: 828734233}
-    m_RemovedComponents: []
+    - target: {fileID: 82164996473949366, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: enemyType
+      value: isHelicopter
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1354727890
@@ -18512,6 +19430,26 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
+    - target: {fileID: 82578225727601764, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: enemyType
+      value: isShip
+      objectReference: {fileID: 0}
+    - target: {fileID: 95159985380256456, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 977fa53d682154a4dbc488bd7a8faf32, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b163bfb99a837e4b85a6f29d5c58a27, type: 2}
   m_IsPrefabParent: 0
@@ -18715,7 +19653,23 @@ Prefab:
       propertyPath: plane
       value: 
       objectReference: {fileID: 828734233}
-    m_RemovedComponents: []
+    - target: {fileID: 82873635584664528, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114858702314310158, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95201738899960594, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 819de2a944fbf504d906a326266791f3, type: 2}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 70b4d11bbf99516478dcd27cea1029db, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1375311247 stripped
@@ -19459,6 +20413,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1456913768 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 370299860}
 --- !u!1001 &1463174245
 Prefab:
   m_ObjectHideFlags: 0
@@ -19558,7 +20517,23 @@ Prefab:
       propertyPath: plane
       value: 
       objectReference: {fileID: 828734233}
-    m_RemovedComponents: []
+    - target: {fileID: 82164996473949366, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: enemyType
+      value: isHelicopter
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1466435155 stripped
@@ -19619,7 +20594,23 @@ Prefab:
       propertyPath: plane
       value: 
       objectReference: {fileID: 828734233}
-    m_RemovedComponents: []
+    - target: {fileID: 82164996473949366, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: enemyType
+      value: isHelicopter
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1487382897
@@ -19807,6 +20798,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1505723800 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633280478579050, guid: 1506becc7fa15b64d86cbfe039d31e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 1802503798}
 --- !u!1 &1511232220
 GameObject:
   m_ObjectHideFlags: 0
@@ -19905,6 +20901,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1525867814 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1031699448691688, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+    type: 2}
+  m_PrefabInternal: {fileID: 656939362}
 --- !u!1001 &1526353715
 Prefab:
   m_ObjectHideFlags: 0
@@ -20567,7 +21568,23 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
-    m_RemovedComponents: []
+    - target: {fileID: 82164996473949366, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: enemyType
+      value: isHelicopter
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1542537412
@@ -20722,6 +21739,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1551152159 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633280478579050, guid: 1506becc7fa15b64d86cbfe039d31e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 1540368756}
 --- !u!1 &1553871111
 GameObject:
   m_ObjectHideFlags: 0
@@ -21102,6 +22124,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1562958831 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633280478579050, guid: 1506becc7fa15b64d86cbfe039d31e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 1018596553}
 --- !u!1 &1563300751
 GameObject:
   m_ObjectHideFlags: 0
@@ -21446,6 +22473,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4833705248312804, guid: d03f8f093698823498f0dc20f9bc1db8,
     type: 2}
   m_PrefabInternal: {fileID: 1585284686}
+--- !u!1 &1587604003 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 75443263}
 --- !u!1 &1587703598
 GameObject:
   m_ObjectHideFlags: 0
@@ -21589,6 +22621,26 @@ Prefab:
       propertyPath: moveSpeed
       value: -0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 82578225727601764, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: enemyType
+      value: isShip
+      objectReference: {fileID: 0}
+    - target: {fileID: 95159985380256456, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 977fa53d682154a4dbc488bd7a8faf32, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b163bfb99a837e4b85a6f29d5c58a27, type: 2}
   m_IsPrefabParent: 0
@@ -22014,6 +23066,11 @@ Transform:
   m_Father: {fileID: 875197454}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1631775813 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 343487090}
 --- !u!4 &1637267877 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303,
@@ -22244,6 +23301,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1658199845 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 1939630436}
 --- !u!1 &1659740120
 GameObject:
   m_ObjectHideFlags: 0
@@ -22446,9 +23508,30 @@ Prefab:
       propertyPath: plane
       value: 
       objectReference: {fileID: 828734233}
-    m_RemovedComponents: []
+    - target: {fileID: 82164996473949366, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: enemyType
+      value: isHelicopter
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1665507306 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633280478579050, guid: 1506becc7fa15b64d86cbfe039d31e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 1665507305}
 --- !u!1 &1670611845
 GameObject:
   m_ObjectHideFlags: 0
@@ -22582,6 +23665,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.304
@@ -22628,12 +23716,37 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
+    - target: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 1681324358}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1681324356 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 1681324355}
+--- !u!82 &1681324358 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
     type: 2}
   m_PrefabInternal: {fileID: 1681324355}
 --- !u!1 &1691893059
@@ -22786,6 +23899,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1699318484 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1206799169878718, guid: 70b4d11bbf99516478dcd27cea1029db,
+    type: 2}
+  m_PrefabInternal: {fileID: 1080392374}
 --- !u!1 &1703705496
 GameObject:
   m_ObjectHideFlags: 0
@@ -23162,6 +24280,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1735993001 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1031699448691688, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+    type: 2}
+  m_PrefabInternal: {fileID: 1922006006}
 --- !u!1 &1741392620
 GameObject:
   m_ObjectHideFlags: 0
@@ -23962,7 +25085,23 @@ Prefab:
       propertyPath: plane
       value: 
       objectReference: {fileID: 828734233}
-    m_RemovedComponents: []
+    - target: {fileID: 82873635584664528, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114858702314310158, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95201738899960594, guid: 70b4d11bbf99516478dcd27cea1029db,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 819de2a944fbf504d906a326266791f3, type: 2}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 70b4d11bbf99516478dcd27cea1029db, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1789496438 stripped
@@ -23970,6 +25109,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4651419817197688, guid: 70b4d11bbf99516478dcd27cea1029db,
     type: 2}
   m_PrefabInternal: {fileID: 1789496437}
+--- !u!1 &1789570956 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633280478579050, guid: 1506becc7fa15b64d86cbfe039d31e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 34302381}
 --- !u!1 &1789769479
 GameObject:
   m_ObjectHideFlags: 0
@@ -24269,7 +25413,23 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
-    m_RemovedComponents: []
+    - target: {fileID: 82164996473949366, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: enemyType
+      value: isHelicopter
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1807409392
@@ -24576,6 +25736,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1821715877 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 1681324355}
 --- !u!1 &1823593207
 GameObject:
   m_ObjectHideFlags: 0
@@ -24818,7 +25983,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4759891662674392, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4759891662674392, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
       propertyPath: m_LocalRotation.z
@@ -24826,7 +25991,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4759891662674392, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4759891662674392, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
       propertyPath: m_RootOrder
@@ -24846,7 +26011,23 @@ Prefab:
       propertyPath: m_Name
       value: Helicopter (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82164996473949366, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: enemyType
+      value: isHelicopter
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1848193459 stripped
@@ -24896,6 +26077,16 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 514db8fc81a19f848a3e61d8e9df3be5, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1857641543 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633280478579050, guid: 1506becc7fa15b64d86cbfe039d31e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 1848193458}
+--- !u!1 &1858795307 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 264793174}
 --- !u!1 &1859637563
 GameObject:
   m_ObjectHideFlags: 0
@@ -25661,6 +26852,26 @@ Prefab:
       propertyPath: m_Name
       value: Ship (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 82578225727601764, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: enemyType
+      value: isShip
+      objectReference: {fileID: 0}
+    - target: {fileID: 95159985380256456, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 977fa53d682154a4dbc488bd7a8faf32, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b163bfb99a837e4b85a6f29d5c58a27, type: 2}
   m_IsPrefabParent: 0
@@ -25828,6 +27039,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.473
@@ -25860,10 +27076,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303, type: 2}
-      propertyPath: m_Name
-      value: Fuel (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 114248291146105176, guid: aec398bab810f47498432809e7c9f303,
         type: 2}
       propertyPath: scoreText
@@ -25874,12 +27086,36 @@ Prefab:
       propertyPath: measureFuelPosition
       value: 
       objectReference: {fileID: 2072875796}
+    - target: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303, type: 2}
+      propertyPath: m_Name
+      value: Fuel (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 1939630439}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1939630437 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 1939630436}
+--- !u!82 &1939630439 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
     type: 2}
   m_PrefabInternal: {fileID: 1939630436}
 --- !u!1 &1944623226
@@ -25982,6 +27218,16 @@ Transform:
   m_PrefabParentObject: {fileID: 4810952935636030, guid: 514db8fc81a19f848a3e61d8e9df3be5,
     type: 2}
   m_PrefabInternal: {fileID: 1662580290}
+--- !u!1 &1960070231 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 1032002669}
+--- !u!1 &1968506529 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633280478579050, guid: 1506becc7fa15b64d86cbfe039d31e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 2004096265}
 --- !u!1 &1972751244
 GameObject:
   m_ObjectHideFlags: 0
@@ -26120,7 +27366,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300070, guid: af8a9d760425425468c3f26c7ee62909, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -26407,6 +27653,26 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
+    - target: {fileID: 82578225727601764, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: enemyType
+      value: isShip
+      objectReference: {fileID: 0}
+    - target: {fileID: 95159985380256456, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 977fa53d682154a4dbc488bd7a8faf32, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b163bfb99a837e4b85a6f29d5c58a27, type: 2}
   m_IsPrefabParent: 0
@@ -26415,6 +27681,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4923131634085672, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
     type: 2}
   m_PrefabInternal: {fileID: 1994602355}
+--- !u!1 &1996106853 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1031699448691688, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+    type: 2}
+  m_PrefabInternal: {fileID: 733857595}
 --- !u!1 &2000722042
 GameObject:
   m_ObjectHideFlags: 0
@@ -26575,7 +27846,23 @@ Prefab:
       propertyPath: m_Name
       value: Helicopter (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82164996473949366, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114370777890147270, guid: 1506becc7fa15b64d86cbfe039d31e53,
+        type: 2}
+      propertyPath: enemyType
+      value: isHelicopter
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &2004096266 stripped
@@ -26632,9 +27919,34 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
+    - target: {fileID: 82578225727601764, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 114064424732929062, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: enemyType
+      value: isShip
+      objectReference: {fileID: 0}
+    - target: {fileID: 95159985380256456, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 977fa53d682154a4dbc488bd7a8faf32, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b163bfb99a837e4b85a6f29d5c58a27, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2007324589 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1031699448691688, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+    type: 2}
+  m_PrefabInternal: {fileID: 2007324588}
 --- !u!1001 &2010304603
 Prefab:
   m_ObjectHideFlags: 0
@@ -26770,6 +28082,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1444703470}
     m_Modifications:
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4552557914929532, guid: aec398bab810f47498432809e7c9f303, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.46827197
@@ -26816,9 +28133,39 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
+    - target: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: fuelSong.Array.data[2]
+      value: 
+      objectReference: {fileID: 2037886059}
+    - target: {fileID: 114000421195916144, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595051}
+    - target: {fileID: 95992431078375064, guid: aec398bab810f47498432809e7c9f303,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87f02f7b9dd2817499e2e509a7cbdfa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec398bab810f47498432809e7c9f303, type: 2}
   m_IsPrefabParent: 0
+--- !u!82 &2037886059 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82273580692817392, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 2037886057}
+--- !u!1 &2046186684 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883729203182376, guid: aec398bab810f47498432809e7c9f303,
+    type: 2}
+  m_PrefabInternal: {fileID: 438232701}
 --- !u!1 &2050413396
 GameObject:
   m_ObjectHideFlags: 0
@@ -27228,7 +28575,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300072, guid: af8a9d760425425468c3f26c7ee62909, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -27420,6 +28767,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &2094926121 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1206799169878718, guid: 70b4d11bbf99516478dcd27cea1029db,
+    type: 2}
+  m_PrefabInternal: {fileID: 124922743}
 --- !u!1 &2097556827
 GameObject:
   m_ObjectHideFlags: 0
@@ -27648,6 +29000,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &2101388563 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633280478579050, guid: 1506becc7fa15b64d86cbfe039d31e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 1478358027}
 --- !u!1 &2102876517
 GameObject:
   m_ObjectHideFlags: 0
@@ -27900,6 +29257,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &2125766168 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1031699448691688, guid: 0b163bfb99a837e4b85a6f29d5c58a27,
+    type: 2}
+  m_PrefabInternal: {fileID: 1198477762}
+--- !u!1 &2128540585 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1206799169878718, guid: 70b4d11bbf99516478dcd27cea1029db,
+    type: 2}
+  m_PrefabInternal: {fileID: 780078104}
 --- !u!1 &2131850380
 GameObject:
   m_ObjectHideFlags: 0
