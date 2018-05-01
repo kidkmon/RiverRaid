@@ -8,6 +8,8 @@ public class PlaneRaycast : MonoBehaviour {
 	[SerializeField] private GameObject mainCamera;
 	[SerializeField] private Transform SpawnPosition;
 	[SerializeField] private Text lifeCount;
+	[SerializeField] private AudioSource explosionSound;
+
 	private Animator planeAnimator;
 	public static bool isDead;
 	
@@ -28,6 +30,7 @@ public class PlaneRaycast : MonoBehaviour {
 	IEnumerator DeathCoolDown(){
 		isDead = true;
 		FuelController.noFuel = false;
+		explosionSound.Play();
 		planeAnimator.SetBool("isDead", true);
 		yield return new WaitForSeconds(2);
 		if(lifeCount.text == ""){}

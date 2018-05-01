@@ -14,6 +14,9 @@ public class FuelController : MonoBehaviour {
 			if(transform.position.x > -0.27f){
 				timeTemp += Time.deltaTime;
 				if(timeTemp > 1.5f){
+					if(transform.position.x < -0.1f && !GetComponent<AudioSource>().isPlaying){
+						GetComponent<AudioSource>().Play();
+					}
 					transform.position = new Vector3(transform.position.x - 0.030f, transform.position.y, transform.position.z);
 					timeTemp = 0;
 				}

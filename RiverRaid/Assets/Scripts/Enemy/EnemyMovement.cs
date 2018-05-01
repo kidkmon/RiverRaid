@@ -5,14 +5,12 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour {
 
 	[SerializeField] private float moveSpeed;
-	[SerializeField] private float tempToDie;
 	[SerializeField] private float rangeLineVertical;
 	
 	[SerializeField] private GameObject plane;
 	private Rigidbody2D enemyRb;
 	private Animator enemyAnimator;
 	
-	private float timeTemp;
 	private bool enemyGotHit;
 	private int timesCollided = 1;
 
@@ -25,13 +23,7 @@ public class EnemyMovement : MonoBehaviour {
 
 		if(plane.activeSelf){
 			if ((plane.transform.position.y > transform.position.y - rangeLineVertical) && !enemyGotHit){
-				timeTemp += Time.deltaTime;
-				if(timeTemp >= tempToDie){
-					StartCoroutine(DeathAnimation());
-				}
-				else{
-					enemyRb.velocity = new Vector2(moveSpeed, enemyRb.velocity.y);
-				}	
+				enemyRb.velocity = new Vector2(moveSpeed, enemyRb.velocity.y);	
 			}
 		}
 

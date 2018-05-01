@@ -5,14 +5,12 @@ using UnityEngine;
 public class JetMoviment : MonoBehaviour {
 
 	[SerializeField] private float moveSpeed;
-	[SerializeField] private float tempToDie;
 	[SerializeField] private float rangeLineVertical;
 	
 	[SerializeField] private GameObject plane;
 	private Rigidbody2D jetRb;
 	private Animator jetAnimator;
 
-	private float timeTemp;
 	private bool enemyGotHit;
 	
 	void Start () {
@@ -24,13 +22,7 @@ public class JetMoviment : MonoBehaviour {
 
 		if(plane.activeSelf){
 			if (plane.transform.position.y > transform.position.y - rangeLineVertical && !enemyGotHit){
-				timeTemp += Time.deltaTime;
-				if(timeTemp >= tempToDie){
-					StartCoroutine(DeathAnimation());
-				}
-				else{
-					jetRb.velocity = new Vector2(moveSpeed, jetRb.velocity.y);
-				}	
+				jetRb.velocity = new Vector2(moveSpeed, jetRb.velocity.y);
 			}
 		}
 
