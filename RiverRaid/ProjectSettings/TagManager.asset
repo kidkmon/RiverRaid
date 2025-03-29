@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Spawn
   - Bullet
+  - BoxMapCollider
+  - Scenario
+  - EndMap
   layers:
   - Default
   - TransparentFX

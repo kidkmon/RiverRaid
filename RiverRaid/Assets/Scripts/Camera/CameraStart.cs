@@ -11,7 +11,7 @@ public class CameraStart : MonoBehaviour {
 
 	private float cameraSpeed = 0.025f;
 	private Vector3 desiredPosition;
-
+	
 	public static bool gameStarted;
 	
 	void Update () {
@@ -36,3 +36,4 @@ public class CameraStart : MonoBehaviour {
 		}
 	}
 }
+// Deteção de colisão na Unity

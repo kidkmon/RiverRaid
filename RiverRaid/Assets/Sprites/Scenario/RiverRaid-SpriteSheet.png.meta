@@ -1,62 +1,162 @@
 fileFormatVersion: 2
 guid: af8a9d760425425468c3f26c7ee62909
-timeCreated: 1524933321
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: RiverRaid-SpriteSheet_0
-    21300002: RiverRaid-SpriteSheet_1
-    21300004: RiverRaid-SpriteSheet_2
-    21300006: Street
-    21300008: GrassCutRight
-    21300010: RiverRaid-SpriteSheet_5
-    21300012: GrassCutUpLeft
-    21300014: RiverRaid-SpriteSheet_7
-    21300016: RiverRaid-SpriteSheet_8
-    21300018: RiverRaid-SpriteSheet_9
-    21300020: RiverRaid-SpriteSheet_10
-    21300022: Bullet
-    21300024: PlaneLeft
-    21300026: PlaneIdle
-    21300028: PlaneRight
-    21300030: GrassSimple
-    21300032: RiverRaid-SpriteSheet_16
-    21300034: GrassTree
-    21300036: Fuel
-    21300038: RiverRaid-SpriteSheet_19
-    21300040: Bridge
-    21300042: RiverRaid-SpriteSheet_21
-    21300044: HelicopterDown
-    21300046: HelicopterUp
-    21300048: Jet
-    21300050: RiverRaid-SpriteSheet_25
-    21300052: RiverRaid-SpriteSheet_26
-    21300054: GrassCutDownRight
-    21300056: GrassCutDownLeft
-    21300058: RiverRaid-SpriteSheet_29
-    21300060: Ship
-    21300062: RiverRaid-SpriteSheet_31
-    21300064: RiverRaid-SpriteSheet_32
-    21300066: RiverRaid-SpriteSheet_33
-    21300068: RiverRaid-SpriteSheet_34
-    21300070: MeasurerFuel
-    21300072: Measurer
-    21300074: DeathYellow
-    21300076: RiverRaid-SpriteSheet_38
-    21300078: RiverRaid-SpriteSheet_39
-    21300080: RiverRaid-SpriteSheet_40
-    21300082: RiverRaid-SpriteSheet_41
-    21300084: ActivisionLogo
-    21300086: RiverRaid-SpriteSheet_43
-    21300088: RiverRaid-SpriteSheet_44
-    21300090: RiverRaid-SpriteSheet_45
-    21300092: GrassCutUpRight
-    21300094: DeathSmallGreen
-    21300096: DeathLargeGreen
-    21300098: DeathSmallMultiple
-    21300100: DeathLargeMultiple
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: RiverRaid-SpriteSheet_0
+  - first:
+      213: 21300002
+    second: RiverRaid-SpriteSheet_1
+  - first:
+      213: 21300004
+    second: RiverRaid-SpriteSheet_2
+  - first:
+      213: 21300006
+    second: Street
+  - first:
+      213: 21300008
+    second: GrassCutRight
+  - first:
+      213: 21300010
+    second: RiverRaid-SpriteSheet_5
+  - first:
+      213: 21300012
+    second: GrassCutUpLeft
+  - first:
+      213: 21300014
+    second: RiverRaid-SpriteSheet_7
+  - first:
+      213: 21300016
+    second: RiverRaid-SpriteSheet_8
+  - first:
+      213: 21300018
+    second: RiverRaid-SpriteSheet_9
+  - first:
+      213: 21300020
+    second: RiverRaid-SpriteSheet_10
+  - first:
+      213: 21300022
+    second: Bullet
+  - first:
+      213: 21300024
+    second: PlaneLeft
+  - first:
+      213: 21300026
+    second: PlaneIdle
+  - first:
+      213: 21300028
+    second: PlaneRight
+  - first:
+      213: 21300030
+    second: GrassSimple
+  - first:
+      213: 21300032
+    second: RiverRaid-SpriteSheet_16
+  - first:
+      213: 21300034
+    second: GrassTree
+  - first:
+      213: 21300036
+    second: Fuel
+  - first:
+      213: 21300038
+    second: RiverRaid-SpriteSheet_19
+  - first:
+      213: 21300040
+    second: Bridge
+  - first:
+      213: 21300042
+    second: RiverRaid-SpriteSheet_21
+  - first:
+      213: 21300044
+    second: HelicopterDown
+  - first:
+      213: 21300046
+    second: HelicopterUp
+  - first:
+      213: 21300048
+    second: Jet
+  - first:
+      213: 21300050
+    second: RiverRaid-SpriteSheet_25
+  - first:
+      213: 21300052
+    second: RiverRaid-SpriteSheet_26
+  - first:
+      213: 21300054
+    second: GrassCutDownRight
+  - first:
+      213: 21300056
+    second: GrassCutDownLeft
+  - first:
+      213: 21300058
+    second: RiverRaid-SpriteSheet_29
+  - first:
+      213: 21300060
+    second: Ship
+  - first:
+      213: 21300062
+    second: RiverRaid-SpriteSheet_31
+  - first:
+      213: 21300064
+    second: RiverRaid-SpriteSheet_32
+  - first:
+      213: 21300066
+    second: RiverRaid-SpriteSheet_33
+  - first:
+      213: 21300068
+    second: RiverRaid-SpriteSheet_34
+  - first:
+      213: 21300070
+    second: MeasurerFuel
+  - first:
+      213: 21300072
+    second: Measurer
+  - first:
+      213: 21300074
+    second: DeathYellow
+  - first:
+      213: 21300076
+    second: RiverRaid-SpriteSheet_38
+  - first:
+      213: 21300078
+    second: RiverRaid-SpriteSheet_39
+  - first:
+      213: 21300080
+    second: RiverRaid-SpriteSheet_40
+  - first:
+      213: 21300082
+    second: RiverRaid-SpriteSheet_41
+  - first:
+      213: 21300084
+    second: ActivisionLogo
+  - first:
+      213: 21300086
+    second: RiverRaid-SpriteSheet_43
+  - first:
+      213: 21300088
+    second: RiverRaid-SpriteSheet_44
+  - first:
+      213: 21300090
+    second: RiverRaid-SpriteSheet_45
+  - first:
+      213: 21300092
+    second: GrassCutUpRight
+  - first:
+      213: 21300094
+    second: DeathSmallGreen
+  - first:
+      213: 21300096
+    second: DeathLargeGreen
+  - first:
+      213: 21300098
+    second: DeathSmallMultiple
+  - first:
+      213: 21300100
+    second: DeathLargeMultiple
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -73,7 +173,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -82,9 +187,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -1
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -104,11 +209,19 @@ TextureImporter:
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -117,8 +230,11 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -127,8 +243,11 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Android
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -137,7 +256,22 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -155,6 +289,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: GrassCutUpRight
       rect:
@@ -169,6 +310,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c7305410000000000800000000000000
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: GrassCutUpLeft
       rect:
@@ -183,6 +331,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Bullet
       rect:
@@ -197,6 +352,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: PlaneLeft
       rect:
@@ -211,6 +373,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: PlaneIdle
       rect:
@@ -225,6 +394,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: PlaneRight
       rect:
@@ -239,6 +415,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: GrassSimple
       rect:
@@ -253,6 +436,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: GrassTree
       rect:
@@ -267,6 +457,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Fuel
       rect:
@@ -281,6 +478,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Bridge
       rect:
@@ -295,6 +499,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HelicopterDown
       rect:
@@ -309,6 +520,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c4305410000000000800000000000000
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HelicopterUp
       rect:
@@ -323,6 +541,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e4305410000000000800000000000000
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Jet
       rect:
@@ -337,6 +562,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 05305410000000000800000000000000
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: GrassCutDownRight
       rect:
@@ -351,6 +583,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 65305410000000000800000000000000
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: GrassCutDownLeft
       rect:
@@ -365,6 +604,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 85305410000000000800000000000000
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Ship
       rect:
@@ -379,6 +625,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c5305410000000000800000000000000
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: MeasurerFuel
       rect:
@@ -393,6 +646,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 66305410000000000800000000000000
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Measurer
       rect:
@@ -407,6 +667,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 86305410000000000800000000000000
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: DeathYellow
       rect:
@@ -421,6 +688,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a6305410000000000800000000000000
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: ActivisionLogo
       rect:
@@ -435,6 +709,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 47305410000000000800000000000000
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: DeathSmallGreen
       rect:
@@ -449,6 +730,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e7305410000000000800000000000000
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: DeathLargeGreen
       rect:
@@ -463,6 +751,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 08305410000000000800000000000000
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: DeathSmallMultiple
       rect:
@@ -477,6 +772,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 28305410000000000800000000000000
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: DeathLargeMultiple
       rect:
@@ -491,9 +793,51 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 48305410000000000800000000000000
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
-  spritePackingTag: 
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ActivisionLogo: 21300084
+      Bridge: 21300040
+      Bullet: 21300022
+      DeathLargeGreen: 21300096
+      DeathLargeMultiple: 21300100
+      DeathSmallGreen: 21300094
+      DeathSmallMultiple: 21300098
+      DeathYellow: 21300074
+      Fuel: 21300036
+      GrassCutDownLeft: 21300056
+      GrassCutDownRight: 21300054
+      GrassCutUpLeft: 21300012
+      GrassCutUpRight: 21300092
+      GrassSimple: 21300030
+      GrassTree: 21300034
+      HelicopterDown: 21300044
+      HelicopterUp: 21300046
+      Jet: 21300048
+      Measurer: 21300072
+      MeasurerFuel: 21300070
+      PlaneIdle: 21300026
+      PlaneLeft: 21300024
+      PlaneRight: 21300028
+      Ship: 21300060
+      Street: 21300006
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -12,6 +12,8 @@ public class PlaneRaycast : MonoBehaviour {
 
 	private Animator planeAnimator;
 	public static bool isDead;
+	[Header("Prefabs do Rio")]
+	public List<GameObject> riverSegmentPrefabs;
 	
 	void Start () {
 		planeAnimator = GetComponent<Animator>();
@@ -24,9 +26,37 @@ public class PlaneRaycast : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D planeCollider){
-		StartCoroutine(DeathCoolDown());
+		if(planeCollider.gameObject.CompareTag("BoxMapCollider")){
+			Debug.Log("BoxMapCollider");
+			GenerateNextSegment(); 
+		}else{
+			StartCoroutine(DeathCoolDown());
+		}
 	}
+	void GenerateNextSegment() {
+		float MapOffSetY = 10.49f;
+		GameObject[] objects = GameObject.FindGameObjectsWithTag("Scenario");
+		GameObject shortPosition = new GameObject();
+		Debug.Log("objects: " + objects.Length);
+		shortPosition.transform.position = new Vector3(0, int.MinValue, 0);
+		foreach(GameObject obj in objects) {
+			if (obj.transform.position.y > shortPosition.transform.position.y) {
+            	shortPosition = obj;
+        	}
+		}
+		Destroy(shortPosition);
+		//GameObject nextSpawnPosition = GameObject.FindGameObjectWithTag("EndMap");
+		Transform nextSpawnPosition = GameObject.FindGameObjectWithTag("Scenario").transform;
+		Debug.Log("nextSpawnPosition: " + nextSpawnPosition.transform.position);
 
+		int randomIndex = Random.Range(0, riverSegmentPrefabs.Count);
+		GameObject selectedPrefab = riverSegmentPrefabs[randomIndex];
+
+		GameObject newSegment = Instantiate(selectedPrefab, new Vector2(-4.349f,nextSpawnPosition.position.y + MapOffSetY), Quaternion.identity);
+		
+		Debug.Log("newSegment: " + newSegment.transform.position);
+		//Destroy(nextSpawnPosition);
+	}
 	IEnumerator DeathCoolDown(){
 		isDead = true;
 		FuelController.noFuel = false;
@@ -48,8 +78,6 @@ public class PlaneRaycast : MonoBehaviour {
 				lifeCount.text = "";
 			}
 		}
-		
-		
 	}
 
 }
