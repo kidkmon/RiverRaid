@@ -7,7 +7,7 @@ public class CameraStart : MonoBehaviour {
 	[SerializeField] private Transform SpawnPosition;
 	[SerializeField] private GameObject plane;
 	[SerializeField] private GameObject lifeCount; 
-	[SerializeField] private List<GameObject> resetEnemys;	
+	// [SerializeField] private List<GameObject> resetEnemys;	
 
 	private float cameraSpeed = 0.025f;
 	private Vector3 desiredPosition;
@@ -31,9 +31,9 @@ public class CameraStart : MonoBehaviour {
 	}
 
 	void ActivateAllTheObjects(){
-		foreach(GameObject enemy in resetEnemys){
-			enemy.SetActive(true);
-		}
+		// foreach(GameObject enemy in resetEnemys){
+			// enemy.SetActive(true);
+		// }
 	}
 }
 // Deteção de colisão na Unity

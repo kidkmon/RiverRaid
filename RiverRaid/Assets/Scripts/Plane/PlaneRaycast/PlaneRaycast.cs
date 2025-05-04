@@ -30,32 +30,46 @@ public class PlaneRaycast : MonoBehaviour {
 			Debug.Log("BoxMapCollider");
 			GenerateNextSegment(); 
 		}else{
-			StartCoroutine(DeathCoolDown());
+			Debug.Log(planeCollider.gameObject.name);
+			// StartCoroutine(DeathCoolDown());
 		}
 	}
 	void GenerateNextSegment() {
-		float MapOffSetY = 10.49f;
 		GameObject[] objects = GameObject.FindGameObjectsWithTag("Scenario");
-		GameObject shortPosition = new GameObject();
-		Debug.Log("objects: " + objects.Length);
-		shortPosition.transform.position = new Vector3(0, int.MinValue, 0);
-		foreach(GameObject obj in objects) {
-			if (obj.transform.position.y > shortPosition.transform.position.y) {
-            	shortPosition = obj;
-        	}
+		if (objects.Length == 0) {
+			Debug.LogError("Nenhum objeto com a tag 'Scenario' foi encontrado!");
+			return;
 		}
-		Destroy(shortPosition);
-		//GameObject nextSpawnPosition = GameObject.FindGameObjectWithTag("EndMap");
-		Transform nextSpawnPosition = GameObject.FindGameObjectWithTag("Scenario").transform;
-		Debug.Log("nextSpawnPosition: " + nextSpawnPosition.transform.position);
 
+		// Encontre o segmento com a maior posição Y
+		GameObject highestSegment = null;
+		float highestY = float.MinValue;
+
+		foreach (GameObject obj in objects) {
+			if (obj.transform.position.y > highestY) {
+				highestY = obj.transform.position.y;
+				highestSegment = obj;
+			}
+		}
+
+		if (highestSegment == null) {
+			Debug.LogError("Não foi possível determinar o segmento com a maior posição Y.");
+			return;
+		}
+
+		Debug.Log("Segmento mais alto encontrado em: " + highestSegment.transform.position);
+
+		// Gere o próximo segmento
 		int randomIndex = Random.Range(0, riverSegmentPrefabs.Count);
 		GameObject selectedPrefab = riverSegmentPrefabs[randomIndex];
 
-		GameObject newSegment = Instantiate(selectedPrefab, new Vector2(-4.349f,nextSpawnPosition.position.y + MapOffSetY), Quaternion.identity);
-		
-		Debug.Log("newSegment: " + newSegment.transform.position);
-		//Destroy(nextSpawnPosition);
+		GameObject newSegment = Instantiate(
+			selectedPrefab,
+			new Vector2(highestSegment.transform.position.x, highestSegment.transform.position.y),
+			Quaternion.identity
+		);
+
+		Debug.Log("Novo segmento gerado em: " + newSegment.transform.position);
 	}
 	IEnumerator DeathCoolDown(){
 		isDead = true;
