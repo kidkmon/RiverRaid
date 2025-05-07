@@ -24,48 +24,36 @@ public class PlaneRaycast : MonoBehaviour {
 			StartCoroutine(DeathCoolDown());
 		}	
 	}
+	
+	void OnTriggerEnter2D(Collider2D planeCollider){
+		// if(planeCollider.gameObject.CompareTag("BoxMapCollider")){
+			
+			GenerateNextSegment(planeCollider); 
+		// }else{
+			// Debug.Log(planeCollider.gameObject.name);
+			// StartCoroutine(DeathCoolDown());
+		// }
+	}
 
 	void OnCollisionEnter2D(Collision2D planeCollider){
-		if(planeCollider.gameObject.CompareTag("BoxMapCollider")){
-			Debug.Log("BoxMapCollider");
-			GenerateNextSegment(); 
-		}else{
-			Debug.Log(planeCollider.gameObject.name);
-			// StartCoroutine(DeathCoolDown());
-		}
+		Debug.LogError(planeCollider.gameObject.name);
+		StartCoroutine(DeathCoolDown());
 	}
-	void GenerateNextSegment() {
+	void GenerateNextSegment(Collider2D planeCollider){ 
 		GameObject[] objects = GameObject.FindGameObjectsWithTag("Scenario");
 		if (objects.Length == 0) {
 			Debug.LogError("Nenhum objeto com a tag 'Scenario' foi encontrado!");
 			return;
 		}
-
-		// Encontre o segmento com a maior posição Y
-		GameObject highestSegment = null;
-		float highestY = float.MinValue;
-
-		foreach (GameObject obj in objects) {
-			if (obj.transform.position.y > highestY) {
-				highestY = obj.transform.position.y;
-				highestSegment = obj;
-			}
-		}
-
-		if (highestSegment == null) {
-			Debug.LogError("Não foi possível determinar o segmento com a maior posição Y.");
-			return;
-		}
-
-		Debug.Log("Segmento mais alto encontrado em: " + highestSegment.transform.position);
-
+		Vector3 positionCollider = planeCollider.gameObject.transform.position; 
+		// GameObject scnearioPai = planeCollider.gameObject.transform.parent; 
 		// Gere o próximo segmento
 		int randomIndex = Random.Range(0, riverSegmentPrefabs.Count);
 		GameObject selectedPrefab = riverSegmentPrefabs[randomIndex];
 
 		GameObject newSegment = Instantiate(
 			selectedPrefab,
-			new Vector2(highestSegment.transform.position.x, highestSegment.transform.position.y),
+			new Vector2(0, positionCollider.y + 0.5f),
 			Quaternion.identity
 		);
 
