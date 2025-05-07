@@ -46,7 +46,10 @@ public class PlaneRaycast : MonoBehaviour {
 			return;
 		}
 		Vector3 positionCollider = planeCollider.gameObject.transform.position; 
-		// GameObject scnearioPai = planeCollider.gameObject.transform.parent; 
+		Transform parentTransform = planeCollider.transform.parent;
+
+		 // Inicie a Coroutine para deletar o pai após 3 segundos
+        StartCoroutine(DeleteParentAfterDelay(parentTransform.gameObject));
 		// Gere o próximo segmento
 		int randomIndex = Random.Range(0, riverSegmentPrefabs.Count);
 		GameObject selectedPrefab = riverSegmentPrefabs[randomIndex];
@@ -81,5 +84,15 @@ public class PlaneRaycast : MonoBehaviour {
 			}
 		}
 	}
+	IEnumerator DeleteParentAfterDelay(GameObject parentObject) {
+    // Aguarde 3 segundos
+    yield return new WaitForSeconds(3);
+
+    // Verifique se o objeto ainda existe antes de destruí-lo
+    if (parentObject != null) {
+        Debug.Log("Deletando o objeto pai: " + parentObject.name);
+        Destroy(parentObject);
+    }
+}
 
 }
