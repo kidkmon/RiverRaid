@@ -8,6 +8,9 @@ public class FuelObject : MonoBehaviour {
 	[SerializeField] private AudioSource[] fuelSong;
 	private float timeTemp;
 
+	void Start () {
+		measureFuelPosition = GameObject.FindGameObjectWithTag("Measurer").transform;
+	}
 
 	void OnTriggerEnter2D(Collider2D collider) {
 		if(collider.gameObject.tag == "Bullet"){

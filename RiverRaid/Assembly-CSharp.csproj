@@ -69,6 +69,7 @@
     <Compile Include="Assets/Scripts/Plane/PlaneRaycast/PlaneRaycast.cs" />
     <Compile Include="Assets/Scripts/Plane/PlaneMoviments/PlaneController.cs" />
     <Compile Include="Assets/Scripts/HUD/Respawn/RespawnController.cs" />
+    <Compile Include="Assets/Scripts/EnemySpawn.cs" />
     <Compile Include="Assets/Scripts/Plane/Bullet/Bullet.cs" />
     <Compile Include="Assets/Scripts/Enemy/EnemyMovement.cs" />
     <Compile Include="Assets/Scripts/Camera/CameraStart.cs" />

@@ -9869,7 +9869,7 @@ Transform:
   m_GameObject: {fileID: 632355413}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.026149953, y: -0.07500005, z: -0.016113281}
+  m_LocalPosition: {x: 0.446, y: -0.989, z: -0.016113281}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9934,7 +9934,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPosition: {fileID: 0}
   cameraStartPosition: {fileID: 0}
-  mainCamera: {fileID: 0}
 --- !u!1 &633345349
 GameObject:
   m_ObjectHideFlags: 0
@@ -12402,6 +12401,12 @@ MonoBehaviour:
   - {fileID: 3179034912238940816, guid: b0ce31656f3781d57988b2bd912e157a, type: 3}
   - {fileID: 8726841204584450264, guid: 58a5fc395f61c3ad0a7bc2e33a544e16, type: 3}
   - {fileID: 8308740687792107529, guid: fa264eeec382681e6b1748b07bb309bb, type: 3}
+  enemyPrefabs:
+  - {fileID: 1847170366}
+  - {fileID: 1609645480}
+  enemySpawnPositions:
+  - {x: 0, y: 1}
+  - {x: 1, y: 0}
 --- !u!114 &828734235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12597,7 +12602,7 @@ Transform:
   m_GameObject: {fileID: 828734233}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.006, y: 1.056, z: 0}
+  m_LocalPosition: {x: 0.484, y: -0.161, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17002,7 +17007,7 @@ Transform:
   m_GameObject: {fileID: 1076592950}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.5, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20497,7 +20502,7 @@ Transform:
   m_GameObject: {fileID: 1255595051}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.5}
+  m_LocalPosition: {x: 0.471, y: -0.04, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24010,6 +24015,211 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 276753877413934044, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 276932753267429876, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 314444493646207873, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 314626804936161705, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 1017369128091957583, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 1017387304970562925, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 1272065671843622910, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 1273098538720165016, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 2277810397208558811, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 2277836201884068089, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 2614646059129037766, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 2614726973845455964, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 2617944932819995381, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 2619251749915711891, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 2992525843873623892, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 2993252161746222130, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 3390371726123273277, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 3390616711732276757, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 3570829043337915871, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 3570884944769043013, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 3727396691349522380, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 3727495577732113892, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 4454650004822410870, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 4454744457917751788, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 4616601795545512067, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595054}
+    - target: {fileID: 4616601795545512067, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: respawnPosition
+      value: 
+      objectReference: {fileID: 632355414}
+    - target: {fileID: 4616601795545512067, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: cameraStartPosition
+      value: 
+      objectReference: {fileID: 1631281223}
+    - target: {fileID: 4760694745628257751, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 4763926841380798129, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 4865622664244427477, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 4865801816856975613, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 5303036553681203046, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 5303091153206659324, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 6157986983338359261, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 6158720962894391995, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 6963878024884741864, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 6963933650930188658, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 7054700393996035585, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 7054803405963002921, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 7242982764470401477, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 7242993933791977055, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
     - target: {fileID: 7256292181032608236, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24060,6 +24270,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7508933669173661428, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 7509015206734014830, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 7512323746333592516, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 7512378345846221918, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 7514948755311290508, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595054}
+    - target: {fileID: 7514948755311290508, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: respawnPosition
+      value: 
+      objectReference: {fileID: 632355414}
+    - target: {fileID: 7514948755311290508, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: cameraStartPosition
+      value: 
+      objectReference: {fileID: 1631281223}
+    - target: {fileID: 8147061478186503603, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 8150831029001494229, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 8296243591261624732, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 8296257366809054654, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
     - target: {fileID: 8726841204584450264, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
         type: 3}
       propertyPath: m_Name
@@ -24070,6 +24335,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8850528871178960872, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 8850543673271151562, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 8981108086117855295, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 8984385099202011993, guid: 58a5fc395f61c3ad0a7bc2e33a544e16,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26784,6 +27069,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1609645480 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6584580714299694622, guid: 3e0f2423027be20889d62b5623f41b11,
+    type: 3}
+  m_PrefabInstance: {fileID: 7520976288975044477}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1609816570
 GameObject:
   m_ObjectHideFlags: 0
@@ -26954,7 +27245,7 @@ Transform:
   m_GameObject: {fileID: 1631281222}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0071499525, y: 0.40699995, z: -0.0078125}
+  m_LocalPosition: {x: 0.465, y: -1.003, z: -0.0078125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29765,79 +30056,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1506becc7fa15b64d86cbfe039d31e53, type: 3}
---- !u!1001 &1804633340
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8492136944965936275, guid: 6cac2cf1c17b4bb91837975150732b17,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492136944965936275, guid: 6cac2cf1c17b4bb91837975150732b17,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492136944965936275, guid: 6cac2cf1c17b4bb91837975150732b17,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492136944965936275, guid: 6cac2cf1c17b4bb91837975150732b17,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492136944965936275, guid: 6cac2cf1c17b4bb91837975150732b17,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492136944965936275, guid: 6cac2cf1c17b4bb91837975150732b17,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492136944965936275, guid: 6cac2cf1c17b4bb91837975150732b17,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492136944965936275, guid: 6cac2cf1c17b4bb91837975150732b17,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492136944965936275, guid: 6cac2cf1c17b4bb91837975150732b17,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492136944965936275, guid: 6cac2cf1c17b4bb91837975150732b17,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9123988917139511744, guid: 6cac2cf1c17b4bb91837975150732b17,
-        type: 3}
-      propertyPath: m_Name
-      value: Scenario5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9123988917139511744, guid: 6cac2cf1c17b4bb91837975150732b17,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6cac2cf1c17b4bb91837975150732b17, type: 3}
 --- !u!1 &1807409392
 GameObject:
   m_ObjectHideFlags: 0
@@ -30182,6 +30400,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 538790480024618222, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 538809761716981964, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 1029400041765545661, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 1029458490114375975, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 1086867231542876139, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 1086973953835349443, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 1391085232423580268, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 1391110013807470158, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 1424856671424309179, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 1426417372634920157, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 1559012147691180065, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 1559036712977758139, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 1581622709998174893, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 1581866871243989125, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 2484582446272233408, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 2484602828617133026, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
     - target: {fileID: 3179034912238940816, guid: b0ce31656f3781d57988b2bd912e157a,
         type: 3}
       propertyPath: m_Name
@@ -30192,6 +30490,66 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3288387022296084972, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 3291865314156389002, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 3502316928561122639, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595054}
+    - target: {fileID: 3502316928561122639, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: respawnPosition
+      value: 
+      objectReference: {fileID: 632355414}
+    - target: {fileID: 3502316928561122639, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: cameraStartPosition
+      value: 
+      objectReference: {fileID: 1631281223}
+    - target: {fileID: 3687053239186637809, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 3687301933501604313, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 3925195316698969295, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595054}
+    - target: {fileID: 3925195316698969295, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: respawnPosition
+      value: 
+      objectReference: {fileID: 632355414}
+    - target: {fileID: 3925195316698969295, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: cameraStartPosition
+      value: 
+      objectReference: {fileID: 1631281223}
+    - target: {fileID: 4209007505531704152, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 4209020187002144634, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
     - target: {fileID: 4601328418687829943, guid: b0ce31656f3781d57988b2bd912e157a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30242,6 +30600,141 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4968803662832278465, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 4968818886627900507, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 5292606798201006297, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 5292691909677190979, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 5876464157226140046, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 5876498174840054694, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 6637050787492259311, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 6637176026373931637, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 6882411717645330045, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 6882584410364396629, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 7040020621188701469, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 7040194413682081589, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 7276746151335331998, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 7276766940813242116, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 7939572133447516605, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 7939687962525623847, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 7951286881244886664, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8129390561653667795, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 8132613869895509173, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 8194027814502657684, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 8195060930486681074, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 8241665610851347389, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 8245523199896729819, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 8376788989390261473, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 8380611394576080775, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 8513954785031888114, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 8514004707807738728, guid: b0ce31656f3781d57988b2bd912e157a,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30373,6 +30866,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4759891662674392, guid: 1506becc7fa15b64d86cbfe039d31e53,
     type: 3}
   m_PrefabInstance: {fileID: 1478358027}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1847170366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2609966934969025468, guid: 3e0f2423027be20889d62b5623f41b11,
+    type: 3}
+  m_PrefabInstance: {fileID: 7520976288975044477}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1848151786
 GameObject:
@@ -32096,7 +32595,7 @@ GameObject:
   - component: {fileID: 1974334144}
   m_Layer: 0
   m_Name: MeasureFuel
-  m_TagString: Untagged
+  m_TagString: Measurer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33719,6 +34218,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 562410188097072996, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 562496948270270718, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
     - target: {fileID: 945883194009595465, guid: fa264eeec382681e6b1748b07bb309bb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33769,6 +34278,146 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1324779593314319687, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 1324875150182423261, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 2547022655608679071, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595054}
+    - target: {fileID: 2547022655608679071, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: respawnPosition
+      value: 
+      objectReference: {fileID: 632355414}
+    - target: {fileID: 2547022655608679071, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: cameraStartPosition
+      value: 
+      objectReference: {fileID: 1631281223}
+    - target: {fileID: 3015840952764722372, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 3015860166861027558, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 3128423679082398701, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 3128456044753560005, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 3465846807841476697, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 3465906561252210627, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 3783875595706545188, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 3783887111091265542, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 3991066802240903310, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 3991149096208334612, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 4518530586244055804, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1255595054}
+    - target: {fileID: 4518530586244055804, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: respawnPosition
+      value: 
+      objectReference: {fileID: 632355414}
+    - target: {fileID: 4518530586244055804, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: cameraStartPosition
+      value: 
+      objectReference: {fileID: 1631281223}
+    - target: {fileID: 5906650745781739311, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 5906668853856848653, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 5920673282127572252, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 5920705238155202356, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 6242629109193446930, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 6242728959527105594, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 6962111774708269574, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 6962148540572770350, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 7533265042454309973, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 7533289818483521655, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
     - target: {fileID: 8308740687792107529, guid: fa264eeec382681e6b1748b07bb309bb,
         type: 3}
       propertyPath: m_Name
@@ -33779,6 +34428,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8350022993183511687, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 8353193456692283361, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 8812329988108441448, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 8812376272606589170, guid: fa264eeec382681e6b1748b07bb309bb,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34663,31 +35332,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 515635966139351083, guid: 3e0f2423027be20889d62b5623f41b11,
+    - target: {fileID: 100256632564167878, guid: 3e0f2423027be20889d62b5623f41b11,
         type: 3}
-      propertyPath: m_Size.x
-      value: 0.8451097
-      objectReference: {fileID: 0}
-    - target: {fileID: 515635966139351083, guid: 3e0f2423027be20889d62b5623f41b11,
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 101773533689145248, guid: 3e0f2423027be20889d62b5623f41b11,
         type: 3}
-      propertyPath: m_Size.y
-      value: 0.47781897
-      objectReference: {fileID: 0}
-    - target: {fileID: 515635966139351083, guid: 3e0f2423027be20889d62b5623f41b11,
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 325887705180496595, guid: 3e0f2423027be20889d62b5623f41b11,
         type: 3}
-      propertyPath: m_Offset.x
-      value: 0.11385763
-      objectReference: {fileID: 0}
-    - target: {fileID: 515635966139351083, guid: 3e0f2423027be20889d62b5623f41b11,
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 326640411332161973, guid: 3e0f2423027be20889d62b5623f41b11,
         type: 3}
-      propertyPath: m_Offset.y
-      value: 0.23587918
-      objectReference: {fileID: 0}
-    - target: {fileID: 515635966139351083, guid: 3e0f2423027be20889d62b5623f41b11,
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 584383150100971684, guid: 3e0f2423027be20889d62b5623f41b11,
         type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 584433896994383678, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 906167714110479253, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 906274986685020605, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
     - target: {fileID: 1412743863904981974, guid: 3e0f2423027be20889d62b5623f41b11,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34738,26 +35422,126 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5333613682562499095, guid: 3e0f2423027be20889d62b5623f41b11,
+    - target: {fileID: 1424020161714225404, guid: 3e0f2423027be20889d62b5623f41b11,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.327
-      objectReference: {fileID: 0}
-    - target: {fileID: 5333613682562499095, guid: 3e0f2423027be20889d62b5623f41b11,
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 1424197662909768404, guid: 3e0f2423027be20889d62b5623f41b11,
         type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.344
-      objectReference: {fileID: 0}
-    - target: {fileID: 6075572453344378517, guid: 3e0f2423027be20889d62b5623f41b11,
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 1565337605875270649, guid: 3e0f2423027be20889d62b5623f41b11,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.2339
-      objectReference: {fileID: 0}
-    - target: {fileID: 6075572453344378517, guid: 3e0f2423027be20889d62b5623f41b11,
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 1565516206852841937, guid: 3e0f2423027be20889d62b5623f41b11,
         type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.828
-      objectReference: {fileID: 0}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 1729577745822146700, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 1729601211597080342, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 1819897114116939638, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 1822882893529877520, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 2988232708800057117, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 2988335305505778997, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 3834052866442184735, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 3834160001041033783, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 4577791184326012689, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 4577876291001813131, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 5725492624432310305, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 5725623085887524795, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 5906333239028759138, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 5907102394904930564, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 6036434703641106654, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 6037081882478283704, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 7285884189322624769, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 7285944561749694619, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 7598994176170122751, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 7600018350058442393, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
     - target: {fileID: 7951868145291168979, guid: 3e0f2423027be20889d62b5623f41b11,
         type: 3}
       propertyPath: m_Name
@@ -34768,9 +35552,28 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8920011778220349020, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
+    - target: {fileID: 8920181172404417652, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: measureFuelPosition
+      value: 
+      objectReference: {fileID: 2072875796}
+    - target: {fileID: 9194718520771838254, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: plane
+      value: 
+      objectReference: {fileID: 828734233}
+    - target: {fileID: 9194737661611189940, guid: 3e0f2423027be20889d62b5623f41b11,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 188052230}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 3869448564291650707, guid: 3e0f2423027be20889d62b5623f41b11, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e0f2423027be20889d62b5623f41b11, type: 3}
@@ -34786,4 +35589,3 @@ SceneRoots:
   - {fileID: 1822783929}
   - {fileID: 1470378076}
   - {fileID: 2074734861}
-  - {fileID: 1804633340}

@@ -9,6 +9,7 @@ TagManager:
   - BoxMapCollider
   - Scenario
   - EndMap
+  - Measurer
   layers:
   - Default
   - TransparentFX

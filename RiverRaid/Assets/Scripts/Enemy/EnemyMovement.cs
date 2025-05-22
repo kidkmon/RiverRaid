@@ -17,10 +17,11 @@ public class EnemyMovement : MonoBehaviour {
 	void Start () {
 		enemyRb = GetComponent<Rigidbody2D>();
 		enemyAnimator = GetComponent<Animator>();
+		plane = GameObject.FindGameObjectWithTag("Player");
 	}
 	
 	void Update () {
-
+		
 		if(plane.activeSelf){
 			if ((plane.transform.position.y > transform.position.y - rangeLineVertical) && !enemyGotHit){
 				enemyRb.velocity = new Vector2(moveSpeed, enemyRb.velocity.y);	

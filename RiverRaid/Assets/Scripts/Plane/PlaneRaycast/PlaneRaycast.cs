@@ -14,7 +14,10 @@ public class PlaneRaycast : MonoBehaviour {
 	public static bool isDead;
 	[Header("Prefabs do Rio")]
 	public List<GameObject> riverSegmentPrefabs;
-	
+	[Header("Combinação de obstáculos")]
+	public List<GameObject> enemyPrefabs;
+	[Header("Posições Predefinidas para Inimigos")]
+	[SerializeField] private List<Vector2> enemySpawnPositions;
 	void Start () {
 		planeAnimator = GetComponent<Animator>();
 	}
@@ -26,10 +29,9 @@ public class PlaneRaycast : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter2D(Collider2D planeCollider){
-		// if(planeCollider.gameObject.CompareTag("BoxMapCollider")){
-			
+		if(planeCollider.gameObject.CompareTag("BoxMapCollider")){	
 			GenerateNextSegment(planeCollider); 
-		// }else{
+		}
 			// Debug.Log(planeCollider.gameObject.name);
 			// StartCoroutine(DeathCoolDown());
 		// }
@@ -53,7 +55,7 @@ public class PlaneRaycast : MonoBehaviour {
 		// Gere o próximo segmento
 		int randomIndex = Random.Range(0, riverSegmentPrefabs.Count);
 		GameObject selectedPrefab = riverSegmentPrefabs[randomIndex];
-
+		// com esse indice 
 		GameObject newSegment = Instantiate(
 			selectedPrefab,
 			new Vector2(0, positionCollider.y + 0.5f),
@@ -94,5 +96,4 @@ public class PlaneRaycast : MonoBehaviour {
         Destroy(parentObject);
     }
 }
-
 }
