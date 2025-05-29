@@ -4,31 +4,48 @@ using UnityEngine;
 
 public class FuelController : MonoBehaviour {
 
-	private float timeTemp;
+    [SerializeField] private float fuelDecreaseStep;
+    [SerializeField] private float decreaseInterval;
+    [SerializeField] private float minFuelX;
+    [SerializeField] private float warningX;
 
-	public static bool noFuel;
+    private float timeTemp;
+    private AudioSource audioSource;
 
-	void FixedUpdate() {
+    public static bool noFuel;
 
-		if(CameraStart.gameStarted && !PlaneRaycast.isDead){
-			if(transform.position.x > -0.27f){
-				timeTemp += Time.deltaTime;
-				if(timeTemp > 1.5f){
-					if(transform.position.x < -0.1f && !GetComponent<AudioSource>().isPlaying){
-						GetComponent<AudioSource>().Play();
-					}
-					transform.position = new Vector3(transform.position.x - 0.030f, transform.position.y, transform.position.z);
-					timeTemp = 0;
-				}
-			}
-			else{
-				noFuel = true;
-			}
-		}
-		if(!CameraStart.gameStarted){
-			transform.position = new Vector3(0.30f, transform.position.y, transform.position.z);
-		}
-		
-	}
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    void FixedUpdate()
+    {
+        if (CameraStart.gameStarted && !PlaneRaycast.isDead)
+        {
+            if (transform.position.x > minFuelX)
+            {
+                timeTemp += Time.deltaTime;
+                if (timeTemp > decreaseInterval)
+                {
+                    if (transform.position.x < warningX && !audioSource.isPlaying)
+                    {
+                        audioSource.Play();
+                    }
+                    transform.position = new Vector3(transform.position.x - fuelDecreaseStep, transform.position.y, transform.position.z);
+					Debug.Log("Fuel Decreased: " + transform.position.x + " at time: " + fuelDecreaseStep);
+                    timeTemp = 0;
+                }
+            }
+            else
+            {
+                noFuel = true;
+            }
+        }
+        if (!CameraStart.gameStarted)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        }
+    }
 
 }

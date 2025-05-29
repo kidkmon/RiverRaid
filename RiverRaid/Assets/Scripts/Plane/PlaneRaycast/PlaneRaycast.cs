@@ -16,8 +16,6 @@ public class PlaneRaycast : MonoBehaviour {
 	public List<GameObject> riverSegmentPrefabs;
 	[Header("Combinação de obstáculos")]
 	public List<GameObject> enemyPrefabs;
-	[Header("Posições Predefinidas para Inimigos")]
-	[SerializeField] private List<Vector2> enemySpawnPositions;
 	void Start () {
 		planeAnimator = GetComponent<Animator>();
 	}

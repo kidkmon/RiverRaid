@@ -21,11 +21,12 @@ public class FuelObject : MonoBehaviour {
 	void OnTriggerStay2D(Collider2D collider) {
 		if(collider.gameObject.tag == "Player"){
 			timeTemp += 0.0018f;
-			if(measureFuelPosition.position.x <= 0.27f){
+			if(measureFuelPosition.position.x <= 0.5f){
 				if(!fuelSong[0].isPlaying){
 					fuelSong[0].Play();
 				}
 				fuelSong[1].Stop();
+				
 				measureFuelPosition.position = new Vector3(measureFuelPosition.position.x + timeTemp, measureFuelPosition.position.y, measureFuelPosition.position.z);
 				timeTemp = 0;
 			}

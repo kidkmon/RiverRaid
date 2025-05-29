@@ -10,6 +10,7 @@ TagManager:
   - Scenario
   - EndMap
   - Measurer
+  - ScoreText
   layers:
   - Default
   - TransparentFX
