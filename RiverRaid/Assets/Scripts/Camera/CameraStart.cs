@@ -7,6 +7,7 @@ public class CameraStart : MonoBehaviour {
 	[SerializeField] private Transform SpawnPosition;
 	[SerializeField] private GameObject plane;
 	[SerializeField] private GameObject lifeCount; 
+	[SerializeField] private GameObject selectedPrefab;
 	// [SerializeField] private List<GameObject> resetEnemys;	
 
 	private float cameraSpeed = 0.025f;
@@ -14,6 +15,25 @@ public class CameraStart : MonoBehaviour {
 	
 	public static bool gameStarted;
 	
+	void Start () {
+		EventManager.OnPlaneDeathEvent += onPlaneDeathListener;
+	}
+
+	void OnDestroy() {
+		EventManager.OnPlaneDeathEvent -= onPlaneDeathListener;
+	}
+
+	void onPlaneDeathListener(){
+		foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Scenario")) {
+        	Destroy(obj);
+    	}
+		Debug.Log("Instanciando novo segmento...");
+		GameObject newSegment = Instantiate(
+			selectedPrefab,
+			new Vector2(0, 0),
+			Quaternion.identity
+		);
+	}
 	void Update () {
 		desiredPosition = new Vector3(transform.position.x, SpawnPosition.position.y, transform.position.z);
 		transform.position = Vector3.Lerp(transform.position, desiredPosition, cameraSpeed);
@@ -31,9 +51,5 @@ public class CameraStart : MonoBehaviour {
 	}
 
 	void ActivateAllTheObjects(){
-		// foreach(GameObject enemy in resetEnemys){
-			// enemy.SetActive(true);
-		// }
 	}
 }
-// Deteção de colisão na Unity

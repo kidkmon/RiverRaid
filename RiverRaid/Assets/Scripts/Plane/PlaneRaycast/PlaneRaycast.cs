@@ -16,14 +16,22 @@ public class PlaneRaycast : MonoBehaviour {
 	public List<GameObject> riverSegmentPrefabs;
 	[Header("Combinação de obstáculos")]
 	public List<GameObject> enemyPrefabs;
+
+	private GameObject newSegment;
+
 	void Start () {
 		planeAnimator = GetComponent<Animator>();
+		EventManager.OnPlaneStart += onPlayStartListener;
 	}
 	
 	void Update() {
 		if(FuelController.noFuel){
 			StartCoroutine(DeathCoolDown());
 		}	
+	}
+
+	void OnDestroy(){
+		EventManager.OnPlaneStart -= onPlayStartListener;
 	}
 	
 	void OnTriggerEnter2D(Collider2D planeCollider){
@@ -34,9 +42,12 @@ public class PlaneRaycast : MonoBehaviour {
 			// StartCoroutine(DeathCoolDown());
 		// }
 	}
-
+	
+	void onPlayStartListener(){
+		Debug.Log("Play Start Listener Triggered");
+	}
 	void OnCollisionEnter2D(Collision2D planeCollider){
-		Debug.LogError(planeCollider.gameObject.name);
+		EventManager.TriggerPlaneDeathEvent();
 		StartCoroutine(DeathCoolDown());
 	}
 	void GenerateNextSegment(Collider2D planeCollider){ 
@@ -53,13 +64,12 @@ public class PlaneRaycast : MonoBehaviour {
 		// Gere o próximo segmento
 		int randomIndex = Random.Range(0, riverSegmentPrefabs.Count);
 		GameObject selectedPrefab = riverSegmentPrefabs[randomIndex];
-		// com esse indice 
-		GameObject newSegment = Instantiate(
+		
+		newSegment = Instantiate(
 			selectedPrefab,
 			new Vector2(0, positionCollider.y + 0.5f),
 			Quaternion.identity
 		);
-
 		Debug.Log("Novo segmento gerado em: " + newSegment.transform.position);
 	}
 	IEnumerator DeathCoolDown(){

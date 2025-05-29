@@ -6960,6 +6960,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450225756}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &450784901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3179034912238940816, guid: b0ce31656f3781d57988b2bd912e157a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1822783929}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &452262439
 GameObject:
   m_ObjectHideFlags: 0
@@ -20565,6 +20571,7 @@ MonoBehaviour:
   SpawnPosition: {fileID: 1631281223}
   plane: {fileID: 828734233}
   lifeCount: {fileID: 1691893059}
+  selectedPrefab: {fileID: 450784901}
 --- !u!82 &1255595059
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30499,11 +30506,6 @@ PrefabInstance:
       objectReference: {fileID: 188052230}
     - target: {fileID: 3502316928561122639, guid: b0ce31656f3781d57988b2bd912e157a,
         type: 3}
-      propertyPath: mainCamera
-      value: 
-      objectReference: {fileID: 1255595054}
-    - target: {fileID: 3502316928561122639, guid: b0ce31656f3781d57988b2bd912e157a,
-        type: 3}
       propertyPath: respawnPosition
       value: 
       objectReference: {fileID: 632355414}
@@ -30522,11 +30524,6 @@ PrefabInstance:
       propertyPath: measureFuelPosition
       value: 
       objectReference: {fileID: 2072875796}
-    - target: {fileID: 3925195316698969295, guid: b0ce31656f3781d57988b2bd912e157a,
-        type: 3}
-      propertyPath: mainCamera
-      value: 
-      objectReference: {fileID: 1255595054}
     - target: {fileID: 3925195316698969295, guid: b0ce31656f3781d57988b2bd912e157a,
         type: 3}
       propertyPath: respawnPosition
@@ -30677,11 +30674,6 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 188052230}
-    - target: {fileID: 7951286881244886664, guid: b0ce31656f3781d57988b2bd912e157a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8129390561653667795, guid: b0ce31656f3781d57988b2bd912e157a,
         type: 3}
       propertyPath: plane
@@ -32592,7 +32584,7 @@ GameObject:
   - component: {fileID: 1974334144}
   m_Layer: 0
   m_Name: MeasureFuel
-  m_TagString: Measurer
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34027,7 +34019,7 @@ GameObject:
   - component: {fileID: 2072875798}
   m_Layer: 0
   m_Name: Measurer
-  m_TagString: Untagged
+  m_TagString: Measurer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34093,7 +34085,7 @@ Transform:
   m_GameObject: {fileID: 2072875794}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0334, y: -0.0152, z: 0}
+  m_LocalPosition: {x: 0.0331, y: -0.0152, z: 0}
   m_LocalScale: {x: 0.11, y: 0.33455747, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34113,8 +34105,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuelDecreaseStep: 0.03
   decreaseInterval: 1.5
-  minFuelX: -0.27
-  warningX: -0.1
+  minFuelX: -0.03
+  warningX: -0.015
 --- !u!82 &2072875798
 AudioSource:
   m_ObjectHideFlags: 0
@@ -35548,11 +35540,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scenario1
       objectReference: {fileID: 0}
-    - target: {fileID: 7951868145291168979, guid: 3e0f2423027be20889d62b5623f41b11,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8920011778220349020, guid: 3e0f2423027be20889d62b5623f41b11,
         type: 3}
       propertyPath: scoreText
@@ -35562,7 +35549,7 @@ PrefabInstance:
         type: 3}
       propertyPath: measureFuelPosition
       value: 
-      objectReference: {fileID: 2072875796}
+      objectReference: {fileID: 1974334143}
     - target: {fileID: 9194718520771838254, guid: 3e0f2423027be20889d62b5623f41b11,
         type: 3}
       propertyPath: plane

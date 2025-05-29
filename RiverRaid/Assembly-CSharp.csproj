@@ -67,6 +67,7 @@
     <Compile Include="Assets/Scripts/Enemy/JetMoviment.cs" />
     <Compile Include="Assets/Scripts/Enemy/EnemyScore.cs" />
     <Compile Include="Assets/Scripts/Plane/PlaneRaycast/PlaneRaycast.cs" />
+    <Compile Include="Assets/Scripts/EventManager.cs" />
     <Compile Include="Assets/Scripts/Plane/PlaneMoviments/PlaneController.cs" />
     <Compile Include="Assets/Scripts/HUD/Respawn/RespawnController.cs" />
     <Compile Include="Assets/Scripts/EnemySpawn.cs" />

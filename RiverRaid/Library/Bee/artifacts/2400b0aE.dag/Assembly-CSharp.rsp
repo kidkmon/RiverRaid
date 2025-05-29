@@ -368,6 +368,7 @@
 "Assets/Scripts/Enemy/EnemyScore.cs"
 "Assets/Scripts/Enemy/JetMoviment.cs"
 "Assets/Scripts/EnemySpawn.cs"
+"Assets/Scripts/EventManager.cs"
 "Assets/Scripts/HUD/Fuel/FuelController.cs"
 "Assets/Scripts/HUD/Fuel/FuelObject.cs"
 "Assets/Scripts/HUD/Life/LifeManager.cs"

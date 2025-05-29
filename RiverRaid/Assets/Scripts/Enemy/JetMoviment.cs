@@ -17,6 +17,7 @@ public class JetMoviment : MonoBehaviour {
 		jetRb = GetComponent<Rigidbody2D>();
 		jetAnimator = GetComponent<Animator>();
 		plane = GameObject.FindGameObjectWithTag("Player");
+		EventManager.TriggerPlaneStart();
 	}
 
 	void Update () {
