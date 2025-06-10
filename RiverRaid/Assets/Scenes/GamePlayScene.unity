@@ -2937,7 +2937,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.8, y: -117.1}
+  m_AnchoredPosition: {x: 89.9, y: -254.4}
   m_SizeDelta: {x: 160, y: 38.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &188052230
@@ -6960,12 +6960,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450225756}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &450784901 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3179034912238940816, guid: b0ce31656f3781d57988b2bd912e157a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1822783929}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &452262439
 GameObject:
   m_ObjectHideFlags: 0
@@ -20571,7 +20565,8 @@ MonoBehaviour:
   SpawnPosition: {fileID: 1631281223}
   plane: {fileID: 828734233}
   lifeCount: {fileID: 1691893059}
-  selectedPrefab: {fileID: 450784901}
+  selectedPrefab: {fileID: 7951868145291168979, guid: 3e0f2423027be20889d62b5623f41b11,
+    type: 3}
 --- !u!82 &1255595059
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28081,7 +28076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23.1, y: -188.3}
+  m_AnchoredPosition: {x: -126.2, y: -414.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1691893061
